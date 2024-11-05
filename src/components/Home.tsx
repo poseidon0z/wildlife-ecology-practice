@@ -22,7 +22,7 @@ const QuizSelection: React.FC = () => {
     <div className="flex flex-col h-full overflow-y-auto items-center justify-center rounded-lg bg-gray-900 bg-opacity-50 backdrop-blur-lg p-5">
       <h1 className="text-4xl font-bold text-white m-4">Select a Quiz</h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
+      <div className="h-full overflow-y-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
         {Array.from({ length: 12 }, (_, index) => index + 1).map((week) => (
           <div
             key={week}

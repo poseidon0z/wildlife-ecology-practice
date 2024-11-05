@@ -73,17 +73,17 @@
       "answer": "stable"
     },
     {
-      "question": "the mitochondrion is a/an",
+      "question": "The mitochondrion is a/an",
       "options": ["sub-cellular organelle", "cell", "tissue", "organ"],
       "answer": "sub-cellular organelle"
     },
     {
-      "question": "the laboratory approach to ecology uses",
+      "question": "The laboratory approach to ecology uses",
       "options": ["equations", "models", "observations", "experiments"],
       "answer": "experiments"
     },
     {
-      "question": "\"the diversity that exists among different geographies\" are",
+      "question": "\"The diversity that exists among different geographies\" are",
       "options": [
         "alpha biodiversity",
         "beta biodiversity",
@@ -93,17 +93,17 @@
       "answer": "gamma biodiversity"
     },
     {
-      "question": "the hierarchical system was given by",
+      "question": "The hierarchical system was given by",
       "options": ["simon", "watson", "hutchinson", "humboldt"],
       "answer": "simon"
     },
     {
-      "question": "\"groups of actually or potentially interbreeding natural populations, which are reproductively isolated from other such species\" is a definition of",
+      "question": "\"Groups of actually or potentially interbreeding natural populations, which are reproductively isolated from other such species\" is a definition of",
       "options": ["cells", "species", "ecosystems", "biomes"],
       "answer": "species"
     },
     {
-      "question": "\"the diversity that exists within an ecosystem\" is",
+      "question": "\"The diversity that exists within an ecosystem\" is",
       "options": [
         "alpha biodiversity",
         "beta biodiversity",
@@ -113,7 +113,7 @@
       "answer": "alpha biodiversity"
     },
     {
-      "question": "the emergent principle can be stated as",
+      "question": "The emergent principle can be stated as",
       "options": [
         "whole = sum of parts",
         "whole < sum of parts",
@@ -123,7 +123,7 @@
       "answer": "whole > sum of parts"
     },
     {
-      "question": "there is more biodiversity in areas with",
+      "question": "There is more biodiversity in areas with",
       "options": [
         "less competition, less predation",
         "less competition, more predation",
@@ -133,24 +133,24 @@
       "answer": "more competition, more predation"
     },
     {
-      "question": "for more biodiversity, the level of disturbance should be",
+      "question": "For more biodiversity, the level of disturbance should be",
       "options": ["less", "intermediate", "more", "none of these"],
       "answer": "intermediate"
     }
   ],
   "week3": [
     {
-      "question": "birds on giraffe are an example of",
+      "question": "Birds on giraffe are an example of",
       "options": ["colony", "commensalism", "protocooperation", "allelopathy"],
       "answer": "protocooperation"
     },
     {
-      "question": "egrets with buffaloes are an example of",
+      "question": "Egrets with buffaloes are an example of",
       "options": ["colony", "commensalism", "protocooperation", "allelopathy"],
       "answer": "commensalism"
     },
     {
-      "question": "the scientific study of animal behaviour is called",
+      "question": "The scientific study of animal behaviour is called",
       "options": [
         "behaviourism",
         "ecology",
@@ -160,7 +160,7 @@
       "answer": "ethology"
     },
     {
-      "question": "the interaction between exotic shrubs and trees through the action of seed predators is an example of",
+      "question": "The interaction between exotic shrubs and trees through the action of seed predators is an example of",
       "options": [
         "infraspecific competition",
         "apparent competition",
@@ -170,7 +170,7 @@
       "answer": "apparent competition"
     },
     {
-      "question": "harmonious competition occur where",
+      "question": "Harmonious competition occur where",
       "options": [
         "at least one participant is benefited",
         "at least one participant is unharmed",
@@ -185,7 +185,7 @@
       "answer": "rB > C"
     },
     {
-      "question": "trampling of grass due to the movement of animals is an example of",
+      "question": "Trampling of grass due to the movement of animals is an example of",
       "options": [
         "mutualism",
         "ammensalism",
@@ -195,24 +195,24 @@
       "answer": "ammensalism"
     },
     {
-      "question": "i observe a monkey take a tick out of another monkey's head and ear it. In the social context, this behaviour would be called",
+      "question": "I observe a monkey take a tick out of another monkey's head and eat it. In the social context, this behaviour would be called",
       "options": ["tick hunting", "auto grooming", "allo grooming", "foraging"],
       "answer": "allo grooming"
     },
     {
-      "question": "an inventory of behaviours exhibited by an animal during a behaviour exercise is called",
+      "question": "An inventory of behaviours exhibited by an animal during a behaviour exercise is called",
       "options": ["ecogram", "ethogram", "behaviourogram", "animalogram"],
       "answer": "ethogram"
     },
     {
-      "question": "i observe a bird take a tick out of another bird's head and eat it. in the social context, this behaviour would be called",
+      "question": "I observe a bird take a tick out of another bird's head and eat it. in the social context, this behaviour would be called",
       "options": ["tick hunting", "auto grooming", "allo grooming", "foraging"],
       "answer": "allo grooming"
     }
   ],
   "week4": [
     {
-      "question": "consider the food chain\ngrass --> grasshopper --> frog --> snake --> hawk\nas we move up the food chain,",
+      "question": "Consider the food chain\ngrass --> grasshopper --> frog --> snake --> hawk\nas we move up the food chain,",
       "options": [
         "available energy decreases",
         "available energy increases",
@@ -222,7 +222,7 @@
       "answer": "available energy decreases"
     },
     {
-      "question": "consider the food chain\ngrass --> grasshopper --> frog --> snake --> hawk\nin the food chain",
+      "question": "Consider the food chain\ngrass --> grasshopper --> frog --> snake --> hawk\nin the food chain",
       "options": [
         "hawk is producer",
         "hawk is consumer and carnivore",
@@ -242,7 +242,7 @@
       "answer": "inverted pyramid of numbers"
     },
     {
-      "question": "consider the food chain\ngrass --> grasshopper --> frog --> snake --> hawk\nin this food chain",
+      "question": "Consider the food chain\ngrass --> grasshopper --> frog --> snake --> hawk\nin this food chain",
       "options": [
         "frog is producer",
         "frog is consumer and carnivore",
@@ -252,7 +252,7 @@
       "answer": "frog is consumer and carnivore"
     },
     {
-      "question": "at the compensation point",
+      "question": "At the compensation point",
       "options": [
         "photosynthesis = respiration",
         "photosynthesis < respiration",
@@ -272,7 +272,7 @@
       "answer": "spindle pyramid of numbers"
     },
     {
-      "question": "glacial lakes are typical examples of",
+      "question": "Glacial lakes are typical examples of",
       "options": [
         "eutrophic lakes",
         "hypereutrophic lakes",
@@ -282,7 +282,7 @@
       "answer": "oligotrophic lakes"
     },
     {
-      "question": "consider the food chain\ngrass --> grasshopper --> frog --> snake -->hawk\nin this food chain",
+      "question": "Consider the food chain\ngrass --> grasshopper --> frog --> snake -->hawk\nin this food chain",
       "options": [
         "more numbers of hawks than grasshoppers can be supported",
         "more numbers of grasshoppers than hawks can be supported",
@@ -292,12 +292,12 @@
       "answer": "more numbers of grasshoppers than hawks can be supported"
     },
     {
-      "question": "if we all become vegetarians, we'll be able to support our large populations. this can be explained through",
+      "question": "If we all become vegetarians, we'll be able to support our large populations. this can be explained through",
       "options": ["10% rule", "1% rule", "trophic cascades", "biodiversity"],
       "answer": "10% rule"
     },
     {
-      "question": "net primary productivity is given by",
+      "question": "Net primary productivity is given by",
       "options": ["APAR x LUE", "APAR + LUE", "APAR - LUE", "APAR / LUE"],
       "answer": "APAR x LUE"
     }
@@ -309,7 +309,7 @@
       "answer": "accuracy"
     },
     {
-      "question": "which of these us not a measure of absolute population density?",
+      "question": "Which of these us not a measure of absolute population density?",
       "options": [
         "total count",
         "pelt count",
@@ -319,7 +319,7 @@
       "answer": "pelt count"
     },
     {
-      "question": "the logistic growth equation, when plotted, appears",
+      "question": "The logistic growth equation, when plotted, appears",
       "options": ["I shaped", "J shaped", "S shaped", "O shaped"],
       "answer": "S shaped"
     },
@@ -334,7 +334,7 @@
       "answer": "systematic sampling"
     },
     {
-      "question": "the juvenile mortality rate is the annual number of death of juveniles per",
+      "question": "The juvenile mortality rate is the annual number of death of juveniles per",
       "options": [
         "100 births",
         "1000 births",
@@ -344,12 +344,12 @@
       "answer": "1000 live births"
     },
     {
-      "question": "the minimum replacement level fertility for a population to grow should be greater than",
+      "question": "The minimum replacement level fertility for a population to grow should be greater than",
       "options": ["1", "2", "3", "4"],
       "answer": "2"
     },
     {
-      "question": "pan traps are used for sampling",
+      "question": "Pan traps are used for sampling",
       "options": [
         "bees",
         "butterflies",
@@ -359,7 +359,7 @@
       "answer": "pollinator insects"
     },
     {
-      "question": "which of these is true",
+      "question": "Which of these is true",
       "options": [
         "physiological longevity > ecological longevity",
         "physiological longevity = ecological longevity",
@@ -369,7 +369,7 @@
       "answer": "a or b"
     },
     {
-      "question": "a sampling procedure such that each possible combination of sampling units out of the population has the same chance of being selected is referred to as",
+      "question": "A sampling procedure such that each possible combination of sampling units out of the population has the same chance of being selected is referred to as",
       "options": [
         "simple random sampling",
         "systematic sampling",
@@ -379,14 +379,14 @@
       "answer": "simple random sampling"
     },
     {
-      "question": "cover board surveys are typically used for sampling",
+      "question": "Cover board surveys are typically used for sampling",
       "options": ["herpetofauna", "fishes", "large mammals", "carnivores"],
       "answer": "herpetofauna"
     }
   ],
   "week6": [
     {
-      "question": "a climax caused by wildfires is an example of",
+      "question": "A climax caused by wildfires is an example of",
       "options": [
         "climatic climax",
         "edaphic climax",
@@ -396,7 +396,7 @@
       "answer": "catastrophic climax"
     },
     {
-      "question": "when compared to generalist species, specialist species have",
+      "question": "When compared to generalist species, specialist species have",
       "options": [
         "narrower niches",
         "broader niches",
@@ -406,7 +406,7 @@
       "answer": "narrower niches"
     },
     {
-      "question": "which of these depicts correctly the lithosere primary succession",
+      "question": "Which of these depicts correctly the lithosere primary succession",
       "options": [
         "rock --> crustose lichen --> foliose lichen --> moss --> herbaceous stage --> shrub --> woodland --> climax",
         "rock --> foliose lichen --> crustose lichen --> moss --> herbaceous stage --> shrub --> woodland --> climax",
@@ -416,7 +416,7 @@
       "answer": "rock --> crustose lichen --> foliose lichen --> moss --> herbaceous stage --> shrub --> woodland --> climax"
     },
     {
-      "question": "importance value can be written as",
+      "question": "Importance value can be written as",
       "options": [
         "relative density + relative frequency X relative dominance",
         "relative density X relative frequency + relative dominance",
@@ -426,17 +426,17 @@
       "answer": "relative density + relative frequency + relative dominance"
     },
     {
-      "question": "lithosere is an example of",
+      "question": "Lithosere is an example of",
       "options": ["hydrosere", "xerosere", "psammosere", "halosere"],
       "answer": "xerosere"
     },
     {
-      "question": "importance value varies from",
+      "question": "Importance value varies from",
       "options": ["0 to 10", "0 to 50", "0 to 100", "0 to 300"],
       "answer": "0 to 300"
     },
     {
-      "question": "a species found most frequently in a particular community, but also present occasionally in others is called",
+      "question": "A species found most frequently in a particular community, but also present occasionally in others is called",
       "options": [
         "accidental species",
         "indifferent species",
@@ -446,7 +446,7 @@
       "answer": "selective species"
     },
     {
-      "question": "the climax near Tindi village is being controlled by disturbance by cattle. this is an example of",
+      "question": "The climax near Tindi village is being controlled by disturbance by cattle. this is an example of",
       "options": [
         "climatic climax",
         "edaphic climax",
@@ -456,7 +456,7 @@
       "answer": "disclimax"
     },
     {
-      "question": "which of these is correct?",
+      "question": "Which of these is correct?",
       "options": [
         "fundamental niche > realised niche",
         "fundamental niche = realised niche",
@@ -466,7 +466,7 @@
       "answer": "a or b"
     },
     {
-      "question": "which of these is not a characteristic of pioneer species",
+      "question": "Which of these is not a characteristic of pioneer species",
       "options": [
         "ability to grow on bare rocks",
         "ability to tolerate extreme temperatures",
@@ -478,7 +478,7 @@
   ],
   "week7": [
     {
-      "question": "i tried growing vegetables under my teak plantation, but the vegetable plants died out. i should be concerned about",
+      "question": "I tried growing vegetables under my teak plantation, but the vegetable plants died out. i should be concerned about",
       "options": ["autophagy", "allelophagy", "autopathy", "allelopathy"],
       "answer": "allelopathy"
     },
@@ -488,7 +488,7 @@
       "answer": "predators"
     },
     {
-      "question": "\"the rate of biological process is limited by that factor in least amount relative to requirement, so there is a single limiting factor\" this is the statement for",
+      "question": "\"The rate of biological process is limited by that factor in least amount relative to requirement, so there is a single limiting factor\" this is the statement for",
       "options": [
         "Liebig's law of minimum",
         "Liebig's law of maximum",
@@ -498,7 +498,7 @@
       "answer": "Liebig's law of minimum"
     },
     {
-      "question": "transplantation experiments are used to find",
+      "question": "Transplantation experiments are used to find",
       "options": [
         "potential range",
         "effective range",
@@ -508,7 +508,7 @@
       "answer": "potential range"
     },
     {
-      "question": "\"quick movement over large distances, often across unsuitable terrain\" is a definition of",
+      "question": "\"Quick movement over large distances, often across unsuitable terrain\" is a definition of",
       "options": [
         "diffusion",
         "secular dispersal",
@@ -518,7 +518,7 @@
       "answer": "jump dispersal"
     },
     {
-      "question": "the movement of lions across the Gir landscape is an example of",
+      "question": "The movement of lions across the Gir landscape is an example of",
       "options": [
         "diffusion",
         "secular dispersal",
@@ -528,7 +528,7 @@
       "answer": "diffusion"
     },
     {
-      "question": "good climate is a",
+      "question": "Good climate is a",
       "options": [
         "chemical factor",
         "demographic factor",
@@ -538,7 +538,7 @@
       "answer": "pull factor"
     },
     {
-      "question": "scarcity of food is a",
+      "question": "Scarcity of food is a",
       "options": [
         "chemical factor",
         "demographic factor",
@@ -548,7 +548,7 @@
       "answer": "push factor"
     },
     {
-      "question": "\"the geographical distribution of a species will be controlled by that environment factor for which the organism has the narrowest range of tolerance\" this is the statement for",
+      "question": "\"The geographical distribution of a species will be controlled by that environment factor for which the organism has the narrowest range of tolerance\" this is the statement for",
       "options": [
         "Liebig's law of minimum",
         "Liebig's law of maximum",
@@ -558,7 +558,7 @@
       "answer": "Shelford's law of tolerance"
     },
     {
-      "question": "the movement of individuals away from their place of birth or hatching or seed production into a new habitat or area to survive and reproduce is called",
+      "question": "The movement of individuals away from their place of birth or hatching or seed production into a new habitat or area to survive and reproduce is called",
       "options": ["translocation", "migration", "dispersal", "drifting"],
       "answer": "dispersal"
     }
@@ -570,7 +570,7 @@
       "answer": "sickle"
     },
     {
-      "question": "which of these correctly represents the process of habitat fragmentation and loss",
+      "question": "Which of these correctly represents the process of habitat fragmentation and loss",
       "options": [
         "original forest --> dissection --> perforation --> fragmentation --> attrition",
         "original forest --> dissection --> attrition --> fragmentation --> perforation",
@@ -580,17 +580,17 @@
       "answer": "original forest --> dissection --> perforation --> fragmentation --> attrition"
     },
     {
-      "question": "we prefer those areas for the creation of conservation reserve where the level of threat is",
+      "question": "We prefer those areas for the creation of conservation reserve where the level of threat is",
       "options": ["very high", "medium", "very low", "non-existent"],
       "answer": "medium"
     },
     {
-      "question": "the \"subset of physical and biotic environmental factors that permit an animal (or plant) to survive and reproduce\" is the definition of",
+      "question": "\"The subset of physical and biotic environmental factors that permit an animal (or plant) to survive and reproduce\" is the definition of",
       "options": ["habitat", "ecosystem", "biome", "biosphere"],
       "answer": "habitat"
     },
     {
-      "question": "captive breeding is an example of",
+      "question": "Captive breeding is an example of",
       "options": [
         "in-situ conservation",
         "ex-situ conservation",
@@ -600,7 +600,7 @@
       "answer": "ex-situ conservation"
     },
     {
-      "question": "which of these is a deterministic factor?",
+      "question": "Which of these is a deterministic factor?",
       "options": [
         "environmental variation",
         "forest fire",
@@ -610,7 +610,7 @@
       "answer": "death rate"
     },
     {
-      "question": "which of these is a stochastic factor",
+      "question": "Which of these is a stochastic factor",
       "options": [
         "birth rate",
         "death rate",
@@ -620,7 +620,7 @@
       "answer": "environmental fluctuation"
     },
     {
-      "question": "zoo is an example of",
+      "question": "Zoo is an example of",
       "options": [
         "in-situ conservation",
         "ex-situ conservation",
@@ -630,7 +630,7 @@
       "answer": "ex-situ conservation"
     },
     {
-      "question": "the acronym HIPPO does not include",
+      "question": "The acronym HIPPO does not include",
       "options": [
         "habitat loss",
         "habitat enhancement",
@@ -640,7 +640,7 @@
       "answer": "habitat enhancement"
     },
     {
-      "question": "the acronym HIPPO does not include",
+      "question": "The acronym HIPPO does not include",
       "options": [
         "habitat loss",
         "invasive species",
@@ -652,12 +652,12 @@
   ],
   "week9": [
     {
-      "question": "which of these is a positive check according to Malthus?",
+      "question": "Which of these is a positive check according to Malthus?",
       "options": ["late marriage", "war", "celibacy", "moral restraint"],
       "answer": "war"
     },
     {
-      "question": "the demographic transition sees a society move from",
+      "question": "The demographic transition sees a society move from",
       "options": [
         "high birth rate, low death rate to low birth rate, low death rate",
         "low birth rate, high death rate to low birth rate, low death rate",
@@ -667,7 +667,7 @@
       "answer": "high birth rate, high death rate to low birth rate, low death rate"
     },
     {
-      "question": "according to Malthusian model",
+      "question": "According to Malthusian model",
       "options": [
         "population grows in geometric progression, food supply increases in arithmetic progression",
         "population grows in geometric progression, food supply increases in geometric progression",
@@ -677,7 +677,7 @@
       "answer": "population grows in geometric progression, food supply increases in arithmetic progression"
     },
     {
-      "question": "the book \"An essay on the principle of population\" was written by",
+      "question": "The book \"An essay on the principle of population\" was written by",
       "options": ["Darwin", "Malthus", "Spencer", "Owens"],
       "answer": "Malthus"
     },
@@ -697,7 +697,7 @@
       "answer": "screening"
     },
     {
-      "question": "which of these is a pillar of sustainability",
+      "question": "Which of these is a pillar of sustainability",
       "options": [
         "social sustainability",
         "industrial sustainability",
@@ -707,7 +707,7 @@
       "answer": "social sustainability"
     },
     {
-      "question": "which of these is not a pillar of sustainability ?",
+      "question": "Which of these is not a pillar of sustainability ?",
       "options": [
         "environmental sustainability",
         "economic sustainability",
@@ -717,7 +717,7 @@
       "answer": "trans- boundary sustainability"
     },
     {
-      "question": "the quantum of human impacts is given by",
+      "question": "The quantum of human impacts is given by",
       "options": [
         "I = P X A X T",
         "I = P + A + T",
@@ -729,7 +729,7 @@
   ],
   "week10": [
     {
-      "question": "which of these is not a climatic forcing for Earth?",
+      "question": "Which of these is not a climatic forcing for Earth?",
       "options": [
         "changes in plates tectonics",
         "changes in Earth's orbit",
@@ -744,17 +744,17 @@
       "answer": "5-20 mm"
     },
     {
-      "question": "macrodebris in the context of plastic debris had fragment of size",
+      "question": "Macrodebris in the context of plastic debris had fragment of size",
       "options": [">20mm", "5-20mm", "<5mm", "<1mm"],
       "answer": ">20mm"
     },
     {
-      "question": "\"any changes in natural or human systems that inadvertently increase vulnerability to climatic stimuli; an adaptation that does not succeed in reducing vulnerability but increase it instead\" is a definition of",
+      "question": "\"Any changes in natural or human systems that inadvertently increase vulnerability to climatic stimuli; an adaptation that does not succeed in reducing vulnerability but increase it instead\" is a definition of",
       "options": ["adaptation", "mitigation", "maladaptation", "malmitigation"],
       "answer": "maladaptation"
     },
     {
-      "question": "which of these is not a principle of ecological restoration?",
+      "question": "Which of these is not a principle of ecological restoration?",
       "options": [
         "ecological integrity",
         "long term sustainability",
@@ -764,12 +764,12 @@
       "answer": "benefits and engages scientists"
     },
     {
-      "question": "the government came up with a regulation that incandescent bulbs be replaced by LED bulbs, so that electricity consumption and release of carbon dioxide from power plants is reduced. in the context of climate change, such an action would be called",
+      "question": "The government came up with a regulation that incandescent bulbs be replaced by LED bulbs, so that electricity consumption and release of carbon dioxide from power plants is reduced. in the context of climate change, such an action would be called",
       "options": ["adaptation", "mitigation", "deceleration", "maladaptation"],
       "answer": "mitigation"
     },
     {
-      "question": "which of these is not a principle of ecological restoration?",
+      "question": "Which of these is not a principle of ecological restoration?",
       "options": [
         "ecological integrity",
         "short term sustainability",
@@ -779,7 +779,7 @@
       "answer": "short term sustainability"
     },
     {
-      "question": "\"the ability of a system to adjust to climate change (including climate variability and extremes) to moderate potential damages, to take advantage of opportunities, or to cope with the consequences\" is a definition of",
+      "question": "\"The ability of a system to adjust to climate change (including climate variability and extremes) to moderate potential damages, to take advantage of opportunities, or to cope with the consequences\" is a definition of",
       "options": [
         "adaptive response",
         "adaptive capacity",
@@ -789,7 +789,7 @@
       "answer": "adaptive capacity"
     },
     {
-      "question": "which of these is not a climatic forcing for Earth?",
+      "question": "Which of these is not a climatic forcing for Earth?",
       "options": [
         "changes in plate tectonics",
         "changes in Earth's orbit",
@@ -799,14 +799,14 @@
       "answer": "changes in Moon's orbit"
     },
     {
-      "question": "because of climate change, Mudumalai tiger reserve is suffering from frequent droughts. the management has built several artificial water holes for animals, and fills them up regularly with tankers. in the context of climate change, such an action would be called",
+      "question": "Because of climate change, Mudumalai tiger reserve is suffering from frequent droughts. the management has built several artificial water holes for animals, and fills them up regularly with tankers. in the context of climate change, such an action would be called",
       "options": ["adaptation", "mitigation", "deceleration", "maladaptation"],
       "answer": "adaptation"
     }
   ],
   "week11": [
     {
-      "question": "which of these is correct?",
+      "question": "Which of these is correct?",
       "options": [
         "R + G = M + F",
         "R + M = G + F",
@@ -816,7 +816,7 @@
       "answer": "R + G = M + F"
     },
     {
-      "question": "which of these is not an impact of toxic chemicals?",
+      "question": "Which of these is not an impact of toxic chemicals?",
       "options": [
         "lethal effects",
         "sub- lethal effects",
@@ -826,7 +826,7 @@
       "answer": "reduction of existing stressors"
     },
     {
-      "question": "a pest population is called controlled when",
+      "question": "A pest population is called controlled when",
       "options": [
         "it is not increasing",
         "it is decreasing",
@@ -836,12 +836,12 @@
       "answer": "it is not causing excessive economic damage"
     },
     {
-      "question": "a deciduous forest in Madhya Pradesh was converted to a mine. after the mining operations were over, the pits were filled up with soil and species of deciduous forest planted again. this is an example of",
+      "question": "A deciduous forest in Madhya Pradesh was converted to a mine. after the mining operations were over, the pits were filled up with soil and species of deciduous forest planted again. this is an example of",
       "options": ["recovery", "restoration", "enhancement", "replacement"],
       "answer": "restoration"
     },
     {
-      "question": "the root zone treatment plant is an example of",
+      "question": "The root zone treatment plant is an example of",
       "options": [
         "phytoremediation",
         "biological control",
@@ -851,7 +851,7 @@
       "answer": "phytoremediation"
     },
     {
-      "question": "a pest population called uncontrolled when",
+      "question": "A pest population called uncontrolled when",
       "options": [
         "it is increasing",
         "it is not decreasing",
@@ -861,7 +861,7 @@
       "answer": "it is causing excessive economic damage"
     },
     {
-      "question": "the impact of El Nino on fishery in Peru is explained by",
+      "question": "The impact of El Nino on fishery in Peru is explained by",
       "options": [
         "match hypothesis",
         "mismatch hypothesis",
@@ -871,7 +871,7 @@
       "answer": "match- mismatch hypothesis"
     },
     {
-      "question": "which of these is correct",
+      "question": "Which of these is correct",
       "options": [
         "the maximum sustainable yield is near the beginning of the sigmoidal curve",
         "the maximum sustainable yield is near the mid-pount of the sigmoidal curve",
@@ -891,7 +891,7 @@
       "answer": "increasing harvesting rate"
     },
     {
-      "question": "a deciduous forest in Madhya Pradesh was converted to a mine. after the mining operations were over, the pits were filled up with water and a lake was created. it is now visited by several migratory birds. this is an example of",
+      "question": "A deciduous forest in Madhya Pradesh was converted to a mine. after the mining operations were over, the pits were filled up with water and a lake was created. it is now visited by several migratory birds. this is an example of",
       "options": ["recovery", "restoration", "enhancement", "replacement"],
       "answer": "replacement"
     }

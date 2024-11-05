@@ -88,7 +88,7 @@ const QuizWindow: React.FC<Props> = ({
   const seconds = time % 60;
 
   return (
-    <div className="max-w-md mx-auto p-6 bg-black bg-opacity-50 backdrop-blur-lg rounded-lg shadow-lg border border-purple-600">
+    <div className="h-fit max-h-full max-w-md mx-auto overflow-y-auto p-6 bg-black bg-opacity-50 backdrop-blur-lg rounded-lg shadow-lg border border-purple-600">
       <h2 className="text-2xl font-semibold mb-4 text-left text-white">
         {questionNumber}. {question}
       </h2>

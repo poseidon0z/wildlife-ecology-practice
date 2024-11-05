@@ -22,7 +22,7 @@ const QuizSelection: React.FC = () => {
     <div className="flex flex-col h-full overflow-y-auto items-center justify-center rounded-lg bg-gray-900 bg-opacity-50 backdrop-blur-lg p-5">
       <h1 className="text-4xl font-bold text-white m-4">Select a Quiz</h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
+      <div className="h-full grid grid-cols-2 sm:grid-cols-2 overflow-y-auto md:overflow-y-auto grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
         {Array.from({ length: 12 }, (_, index) => index + 1).map((week) => (
           <div
             key={week}
@@ -33,7 +33,7 @@ const QuizSelection: React.FC = () => {
           </div>
         ))}
       </div>
-      <div className="flex flex-col sm:flex-row space-x-0 sm:space-x-4">
+      <div className="flex flex-row sm:flex-row space-x-4 sm:space-x-4">
         <button
           onClick={handleRandomClick}
           className="bg-purple-300 text-white text-2xl bg-opacity-50 backdrop-blur-md px-5 mb-2 rounded-lg shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105 aspect-square flex justify-center items-center"

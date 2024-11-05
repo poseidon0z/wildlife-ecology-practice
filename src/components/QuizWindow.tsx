@@ -15,6 +15,7 @@ const QuizWindow: React.FC<Props> = ({
   correctAnswer,
   nextQuestion,
 }) => {
+  const [shuffledOptions, setShuffledOptions] = useState<string[]>([]);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [isAnswered, setIsAnswered] = useState<boolean>(false);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
@@ -47,8 +48,8 @@ const QuizWindow: React.FC<Props> = ({
   };
 
   const setCompletionTime = () => {
-    localStorage.setItem("Time",String(document.getElementById("tmr")?.innerHTML))
-  }
+    localStorage.setItem("Time", String(document.getElementById("tmr")?.innerHTML));
+  };
 
   // Handle question submission
   const handleSubmit = () => {
@@ -64,7 +65,6 @@ const QuizWindow: React.FC<Props> = ({
   const handleNextQuestion = () => {
     if (selectedOption !== null) {
       nextQuestion(selectedOption);
-      // Reset states for the next question
       setSelectedOption(null);
       setIsAnswered(false);
       setIsCorrect(null);
@@ -73,15 +73,25 @@ const QuizWindow: React.FC<Props> = ({
     }
   };
 
-  // Effect to start the timer when the component is mounted
+  // Effect to shuffle options on component mount or when question changes
   useEffect(() => {
+    const shuffleArray = (array: string[]) => {
+      const newArray = [...array];
+      for (let i = newArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+      }
+      return newArray;
+    };
+
+    setShuffledOptions(shuffleArray(options));
     startTimer();
 
     // Cleanup when the component is unmounted or when the timer is stopped
     return () => {
       stopTimer();
     };
-  }, []); // This empty array ensures the timer starts only once when the component mounts
+  }, [question, options]); // Shuffle options when question or options change
 
   // Convert time to minutes and seconds format
   const minutes = Math.floor(time / 60);
@@ -93,7 +103,7 @@ const QuizWindow: React.FC<Props> = ({
         {questionNumber}. {question}
       </h2>
       <div className="space-y-4">
-        {options.map((option, index) => (
+        {shuffledOptions.map((option, index) => (
           <button
             key={index}
             onClick={() => handleOptionSelect(option)}

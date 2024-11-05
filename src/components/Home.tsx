@@ -18,6 +18,10 @@ const QuizSelection: React.FC = () => {
     navigate('/quiz/mixed');
   };
 
+  const handleJaldiTenClick = () => {
+    navigate('/quiz/जल्दी10');
+  }
+
   return (
     <div className="flex flex-col h-full overflow-y-auto items-center justify-center rounded-lg bg-gray-900 bg-opacity-50 backdrop-blur-lg p-5">
       <h1 className="text-4xl font-bold text-white m-4">Select a Quiz</h1>
@@ -39,6 +43,12 @@ const QuizSelection: React.FC = () => {
           className="bg-purple-300 text-white text-2xl bg-opacity-50 backdrop-blur-md px-5 mb-2 rounded-lg shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105 aspect-square flex justify-center items-center"
         >
           Random<br></br>Quiz
+        </button>
+        <button
+          onClick={handleJaldiTenClick}
+          className="bg-purple-300 text-white text-2xl bg-opacity-50 backdrop-blur-md px-5 mb-2 rounded-lg shadow-lg cursor-pointer hover:shadow-xl transition transform hover:scale-105 aspect-square flex justify-center items-center"
+        >
+          जल्दी 10<br></br>Quiz
         </button>
         <button
           onClick={handleMixedClick}

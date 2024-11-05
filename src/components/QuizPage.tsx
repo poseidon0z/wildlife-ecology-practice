@@ -23,7 +23,7 @@ type Question = {
 
 // Type assertions for questionsData and selected week key
 const typedQuestionsData = questionsData as WeekData;
-type WeekKey = keyof WeekData | 'mixed';
+type WeekKey = keyof WeekData | 'mixed' | 'जल्दी10';
 
 const QuizPage: React.FC = () => {
   const { selectedWeek } = useParams<{ selectedWeek: WeekKey }>();
@@ -47,14 +47,28 @@ const QuizPage: React.FC = () => {
             typedQuestionsData[week as keyof WeekData]
           );
         }
+      } else if (selectedWeek === 'जल्दी10') {
+        // Select only the first 10 questions across all weeks
+        const allQuestions = [];
+        for (const week in typedQuestionsData) {
+          allQuestions.push(
+            ...typedQuestionsData[week as keyof WeekData]
+          );
+        }
+        // Shuffle and pick the first 10
+        selectedQuestions = allQuestions
+          .sort(() => Math.random() - 0.5)
+          .slice(0, 10);
       } else {
         // Load questions from the specified week
         selectedQuestions =
           typedQuestionsData[selectedWeek as keyof WeekData] || [];
       }
 
-      // Shuffle questions
-      selectedQuestions = selectedQuestions.sort(() => Math.random() - 0.5);
+      // Shuffle questions if it’s a normal week or 'mixed' mode
+      if (selectedWeek !== 'जल्दी10') {
+        selectedQuestions = selectedQuestions.sort(() => Math.random() - 0.5);
+      }
       setQuestions(selectedQuestions);
     };
 
@@ -91,28 +105,39 @@ const QuizPage: React.FC = () => {
     setCurrentQuestionIndex(0);
     setIncorrectAnswers([]);
     setQuizCompleted(false);
-    // Reload questions if necessary
-    const loadQuestions = () => {
-      let selectedQuestions: Question[] = [];
-      if (selectedWeek === 'mixed') {
-        for (const week in typedQuestionsData) {
-          selectedQuestions = selectedQuestions.concat(
-            typedQuestionsData[week as keyof WeekData]
-          );
-        }
-      } else {
-        selectedQuestions =
-          typedQuestionsData[selectedWeek as keyof WeekData] || [];
-      }
-      selectedQuestions = selectedQuestions.sort(() => Math.random() - 0.5);
-      setQuestions(selectedQuestions);
-    };
     loadQuestions();
+  };
+
+  const loadQuestions = () => {
+    let selectedQuestions: Question[] = [];
+    if (selectedWeek === 'mixed') {
+      for (const week in typedQuestionsData) {
+        selectedQuestions = selectedQuestions.concat(
+          typedQuestionsData[week as keyof WeekData]
+        );
+      }
+    } else if (selectedWeek === 'जल्दी10') {
+      const allQuestions = [];
+      for (const week in typedQuestionsData) {
+        allQuestions.push(
+          ...typedQuestionsData[week as keyof WeekData]
+        );
+      }
+      selectedQuestions = allQuestions
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 10);
+    } else {
+      selectedQuestions =
+        typedQuestionsData[selectedWeek as keyof WeekData] || [];
+    }
+    if (selectedWeek !== 'जल्दी10') {
+      selectedQuestions = selectedQuestions.sort(() => Math.random() - 0.5);
+    }
+    setQuestions(selectedQuestions);
   };
 
   return (
     <>
-      {' '}
       {quizCompleted ? (
         <CompletionWindow
           score={score}

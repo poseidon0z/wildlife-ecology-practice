@@ -101,7 +101,7 @@ const QuizWindow: React.FC<Props> = ({
               selectedOption === option ? 'bg-purple-300' : 'bg-slate-100'
             } ${
               isAnswered && option === correctAnswer
-                ? 'border-green-500 bg-green-200'
+                ? 'border-green-500 bg-green-300'
                 : ''
             } ${
               isAnswered &&
@@ -111,7 +111,7 @@ const QuizWindow: React.FC<Props> = ({
                 : isAnswered &&
                   selectedOption === option &&
                   option === correctAnswer
-                  ? 'border-green-500 bg-green-200'
+                  ? 'border-green-500 bg-green-300'
                   : ''
             }`}
           >

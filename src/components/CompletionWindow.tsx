@@ -21,6 +21,7 @@ const CompletionWindow: React.FC<CompletionWindowProps> = ({
       <h3 className="text-lg mb-4 text-center">
         Your score: {score} out of {totalQuestions}
       </h3>
+      <div className='text-l mb-4 text-center'>{localStorage.getItem("Time")}</div>
       {incorrectAnswers.length > 0 && (
         <div className="mt-4">
           <h4 className="text-lg font-semibold mb-4 text-center">

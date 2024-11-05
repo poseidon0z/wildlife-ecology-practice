@@ -44,8 +44,8 @@ const QuizWindow: React.FC<Props> = ({
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-lg">
-      <h2 className="text-2xl font-semibold mb-4 text-left">
+    <div className="max-w-md mx-auto p-6 bg-black bg-opacity-50 backdrop-blur-lg rounded-lg shadow-lg border border-purple-600">
+      <h2 className="text-2xl font-semibold mb-4 text-left text-white">
         {questionNumber}. {question}
       </h2>
       <div className="space-y-4">
@@ -54,14 +54,16 @@ const QuizWindow: React.FC<Props> = ({
             key={index}
             onClick={() => handleOptionSelect(option)}
             className={`w-full p-3 text-left border rounded-md ${
-              selectedOption === option ? 'bg-blue-200' : 'bg-gray-100'
+              selectedOption === option ? 'bg-purple-300' : 'bg-slate-100'
             } ${
-              isAnswered && option === correctAnswer ? 'border-green-500' : ''
+              isAnswered && option === correctAnswer
+                ? 'border-green-500 bg-green-200'
+                : ''
             } ${
               isAnswered &&
               selectedOption === option &&
               option !== correctAnswer
-                ? 'border-red-500'
+                ? 'border-red-500 bg-red-200'
                 : ''
             }`}
           >
@@ -71,7 +73,7 @@ const QuizWindow: React.FC<Props> = ({
       </div>
       <div
         className={`mt-4 text-center ${
-          isCorrect ? 'text-green-600' : 'text-red-600'
+          isCorrect ? 'text-green-400' : 'text-red-400'
         }`}
       >
         {isAnswered ? isCorrect ? 'Correct!' : 'Incorrect' : <>&nbsp;</>}
@@ -83,7 +85,7 @@ const QuizWindow: React.FC<Props> = ({
           className={`px-4 py-2 ${
             isAnswered || selectedOption === null
               ? 'bg-gray-300'
-              : 'bg-blue-500 hover:bg-blue-600'
+              : 'bg-blue-500 hover:bg-blue-800'
           } text-white rounded-md`}
         >
           Submit

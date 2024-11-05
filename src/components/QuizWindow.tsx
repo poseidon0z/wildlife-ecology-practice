@@ -108,7 +108,11 @@ const QuizWindow: React.FC<Props> = ({
               selectedOption === option &&
               option !== correctAnswer
                 ? 'border-red-500 bg-red-200'
-                : ''
+                : isAnswered &&
+                  selectedOption === option &&
+                  option === correctAnswer
+                  ? 'border-green-500 bg-green-200'
+                  : ''
             }`}
           >
             {option}

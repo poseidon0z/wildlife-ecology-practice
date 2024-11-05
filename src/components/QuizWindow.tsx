@@ -48,7 +48,10 @@ const QuizWindow: React.FC<Props> = ({
   };
 
   const setCompletionTime = () => {
-    localStorage.setItem("Time", String(document.getElementById("tmr")?.innerHTML));
+    localStorage.setItem(
+      'Time',
+      String(document.getElementById('tmr')?.innerHTML)
+    );
   };
 
   // Handle question submission
@@ -97,6 +100,30 @@ const QuizWindow: React.FC<Props> = ({
   const minutes = Math.floor(time / 60);
   const seconds = time % 60;
 
+  const giveProps = (option: string) => {
+    if (!isAnswered) {
+      if (selectedOption != option) {
+        return 'bg-slate-100';
+      } else {
+        return 'bg-purple-300';
+      }
+    } else {
+      if (selectedOption != option) {
+        if (correctAnswer == option) {
+          return 'bg-green-200 border-green-500';
+        } else {
+          return 'bg-slate-100';
+        }
+      } else {
+        if (correctAnswer == option) {
+          return 'bg-green-200 border-green-500';
+        } else {
+          return 'bg-red-200 border-red-500';
+        }
+      }
+    }
+  };
+
   return (
     <div className="h-fit max-h-full max-w-md mx-auto overflow-y-auto p-6 bg-black bg-opacity-50 backdrop-blur-lg rounded-lg shadow-lg border border-purple-600">
       <h2 className="text-2xl font-semibold mb-4 text-left text-white">
@@ -107,23 +134,9 @@ const QuizWindow: React.FC<Props> = ({
           <button
             key={index}
             onClick={() => handleOptionSelect(option)}
-            className={`w-full p-3 text-left border rounded-md ${
-              selectedOption === option ? 'bg-purple-300' : 'bg-slate-100'
-            } ${
-              isAnswered && option === correctAnswer
-                ? 'border-green-500 bg-green-200'
-                : ''
-            } ${
-              isAnswered &&
-              selectedOption === option &&
-              option !== correctAnswer
-                ? 'border-red-500 bg-red-200'
-                : isAnswered &&
-                  selectedOption === option &&
-                  option === correctAnswer
-                  ? 'border-green-500 bg-green-200'
-                  : ''
-            }`}
+            className={`w-full p-3 text-left border rounded-md ${giveProps(
+              option
+            )}`}
           >
             {option}
           </button>
@@ -139,7 +152,13 @@ const QuizWindow: React.FC<Props> = ({
 
       {/* Stopwatch Timer */}
       <div className="text-center mt-4">
-        <h3 id="tmr" className="text-xl p-3 text-left border rounded-md bg-slate-100 w-fit m-auto">Time: {String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, '0')}</h3>
+        <h3
+          id="tmr"
+          className="text-xl p-3 text-left border rounded-md bg-slate-100 w-fit m-auto"
+        >
+          Time: {String(minutes).padStart(2, '0')}:
+          {String(seconds).padStart(2, '0')}
+        </h3>
       </div>
 
       <div className="flex justify-between mt-6">

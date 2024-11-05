@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface CompletionWindowProps {
   score: number;
@@ -13,8 +14,12 @@ const CompletionWindow: React.FC<CompletionWindowProps> = ({
   incorrectAnswers,
   onRetry,
 }) => {
+  const navigate = useNavigate();
+  const onBack = () => {
+    navigate(`/`);
+  };
   return (
-    <div className="max-w-md max-h-full overflow-y-auto mx-auto p-6 bg-white rounded-lg shadow-lg">
+    <div className="max-w-md max-h-full overflow-y-auto mx-auto p-6 bg-black bg-opacity-50 text-white rounded-lg shadow-lg">
       <h2 className="text-2xl font-semibold mb-4 text-center">
         Quiz Completed!
       </h2>
@@ -44,12 +49,18 @@ const CompletionWindow: React.FC<CompletionWindowProps> = ({
           </ul>
         </div>
       )}
-      <div className="flex justify-center mt-6">
+      <div className="flex justify-between mt-6">
         <button
           onClick={onRetry}
-          className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-md"
+          className="px-4 py-2 mx-2 bg-blue-500 hover:bg-blue-600 text-white rounded-md"
         >
           Retry Quiz
+        </button>
+        <button
+          onClick={onBack}
+          className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-md"
+        >
+          Back to Home
         </button>
       </div>
     </div>

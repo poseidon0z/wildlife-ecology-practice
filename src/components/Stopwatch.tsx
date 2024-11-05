@@ -63,8 +63,8 @@ const Stopwatch: ForwardRefRenderFunction<StopwatchHandles, StopwatchProps> = (_
   
 
   return (
-    <div>
-      <h1>
+    <div >
+      <h1 className='p-3 text-left border rounded-md bg-slate-100'>
         {String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, '0')}
       </h1>
     </div>

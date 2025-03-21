@@ -46,6 +46,16 @@ const QuizPage: React.FC = () => {
             typedQuestionsData[category as keyof QuizData]
           );
         }
+      } else if (selectedCategory === 'जल्दी10') {
+        // Select only the first 10 questions across all weeks
+        const allQuestions = [];
+        for (const category in typedQuestionsData) {
+          allQuestions.push(...typedQuestionsData[category as keyof QuizData]);
+        }
+        // Shuffle and pick the first 10
+        selectedQuestions = allQuestions
+          .sort(() => Math.random() - 0.5)
+          .slice(0, 10);
       } else {
         // Load questions from the selected category
         selectedQuestions =
@@ -100,6 +110,16 @@ const QuizPage: React.FC = () => {
             typedQuestionsData[category as keyof QuizData]
           );
         }
+      } else if (selectedCategory === 'जल्दी10') {
+        const allQuestions = [];
+        for (const categories in typedQuestionsData) {
+          allQuestions.push(
+            ...typedQuestionsData[categories as keyof QuizData]
+          );
+        }
+        selectedQuestions = allQuestions
+          .sort(() => Math.random() - 0.5)
+          .slice(0, 10);
       } else {
         // Load questions from the selected category
         selectedQuestions =
@@ -116,7 +136,6 @@ const QuizPage: React.FC = () => {
 
   return (
     <>
-      {' '}
       {quizCompleted ? (
         <CompletionWindow
           score={score}

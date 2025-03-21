@@ -1,0 +1,1123 @@
+{
+  "Recover The BST": [
+    {
+      "question": "What is the primary purpose of recovering a Binary Search Tree (BST)?",
+      "options": [
+        "To optimize its search operation",
+        "To ensure its structural integrity after modifications",
+        "To reduce its memory consumption",
+        "To increase its traversal speed"
+      ],
+      "answer": "To ensure its structural integrity after modifications"
+    },
+    {
+      "question": "Which of the following operations can lead to the need for recovering a BST?",
+      "options": ["Insertion", "Deletion", "Searching", "Traversal"],
+      "answer": "Deletion"
+    },
+    {
+      "question": "In a Binary Search Tree, what property must be maintained after a node deletion?",
+      "options": [
+        "In-order traversal property",
+        "Pre-order traversal property",
+        "Post-order traversal property",
+        "Binary search property"
+      ],
+      "answer": "Binary search property"
+    },
+    {
+      "question": "Which of the following algorithms can be used for recovering a BST after a deletion?",
+      "options": [
+        "Breadth-first search (BFS)",
+        "Depth-first search (DFS)",
+        "In-order traversal",
+        "Dijkstra's algorithm"
+      ],
+      "answer": "In-order traversal"
+    },
+    {
+      "question": "What does the in-order traversal of a BST produce?",
+      "options": [
+        "Nodes in sorted order",
+        "Nodes in reverse sorted order",
+        "Nodes in random order",
+        "Nodes in the order they were inserted"
+      ],
+      "answer": "Nodes in sorted order"
+    },
+    {
+      "question": "When recovering a BST after a deletion, which of the following cases is the simplest to handle?",
+      "options": [
+        "Node with no children",
+        "Node with one child",
+        "Node with two children",
+        "Node with three children"
+      ],
+      "answer": "Node with no children"
+    },
+    {
+      "question": "Which of the following is NOT a step in recovering a BST after a deletion?",
+      "options": [
+        "Finding the node to be deleted",
+        "Deleting the node",
+        "Rebalancing the tree",
+        "Reorganizing the tree to maintain the binary search property"
+      ],
+      "answer": "Rebalancing the tree"
+    },
+    {
+      "question": "Which data structure is commonly used for tracking parent nodes during BST recovery?",
+      "options": ["Queue", "Stack", "Linked list", "Array"],
+      "answer": "Stack"
+    },
+    {
+      "question": "In the case of a node with two children being deleted from a BST, which node is typically chosen as its replacement?",
+      "options": [
+        "The node's left child",
+        "The node's right child",
+        "The node's parent",
+        "A random node from the tree"
+      ],
+      "answer": "The node's right child"
+    },
+    {
+      "question": "After recovering a BST following a deletion, what operation should be performed to ensure the tree is balanced?",
+      "options": [
+        "Rotate the tree",
+        "Reorder the nodes",
+        "Recalculate the heights of all nodes",
+        "Perform a rebalancing operation like AVL or Red-Black tree rotations"
+      ],
+      "answer": "Perform a rebalancing operation like AVL or Red-Black tree rotations"
+    }
+  ],
+  "Views of tree": [
+    {
+      "question": "What is the view of a tree?",
+      "options": [
+        "The way the tree is displayed on the screen",
+        "The total number of nodes in the tree",
+        "The representation of the tree from a particular direction",
+        "The height of the tree"
+      ],
+      "answer": "The representation of the tree from a particular direction"
+    },
+    {
+      "question": "Which of the following is NOT a type of tree view?",
+      "options": [
+        "Level order view",
+        "Pre-order view",
+        "In-order view",
+        "Post-order view"
+      ],
+      "answer": "Pre-order view"
+    },
+    {
+      "question": "What does the level order view of a tree display?",
+      "options": [
+        "Nodes at odd levels",
+        "Nodes at even levels",
+        "Nodes at every level, from left to right",
+        "Nodes at the root level only"
+      ],
+      "answer": "Nodes at every level, from left to right"
+    },
+    {
+      "question": "Which view of a tree displays nodes as they are encountered during a depth-first traversal?",
+      "options": [
+        "In-order view",
+        "Pre-order view",
+        "Post-order view",
+        "Level order view"
+      ],
+      "answer": "Pre-order view"
+    },
+    {
+      "question": "In the post-order view of a binary tree, when is a node visited?",
+      "options": [
+        "Before visiting its left child",
+        "After visiting its left child",
+        "Before visiting its right child",
+        "After visiting its right child"
+      ],
+      "answer": "After visiting its right child"
+    },
+    {
+      "question": "Which view of a tree is also known as the breadth-first traversal?",
+      "options": [
+        "Pre-order view",
+        "In-order view",
+        "Level order view",
+        "Post-order view"
+      ],
+      "answer": "Level order view"
+    },
+    {
+      "question": "Which view of a binary tree is used in the expression tree evaluation?",
+      "options": [
+        "Pre-order view",
+        "In-order view",
+        "Post-order view",
+        "Level order view"
+      ],
+      "answer": "In-order view"
+    },
+    {
+      "question": "What is the main advantage of the level order view of a tree?",
+      "options": [
+        "It requires less memory",
+        "It is faster than other views",
+        "It displays the structure of the tree clearly",
+        "It is easier to implement"
+      ],
+      "answer": "It displays the structure of the tree clearly"
+    },
+    {
+      "question": "Which view of a binary tree is used to create a copy of the tree?",
+      "options": [
+        "Pre-order view",
+        "In-order view",
+        "Post-order view",
+        "Level order view"
+      ],
+      "answer": "Pre-order view"
+    },
+    {
+      "question": "In a binary tree, which view provides nodes in non-decreasing order when the tree is a binary search tree (BST)?",
+      "options": [
+        "Pre-order view",
+        "In-order view",
+        "Post-order view",
+        "Level order view"
+      ],
+      "answer": "In-order view"
+    }
+  ],
+  "BFS": [
+    {
+      "question": "What is Breadth-First Search (BFS) primarily used for?",
+      "options": [
+        "Finding the shortest path in a weighted graph",
+        "Traversing and searching tree or graph data structures",
+        "Sorting elements in an array",
+        "Determining the longest path in a directed acyclic graph (DAG)"
+      ],
+      "answer": "Traversing and searching tree or graph data structures"
+    },
+    {
+      "question": "In BFS, which data structure is typically used to store the vertices of the graph or tree?",
+      "options": ["Stack", "Queue", "Priority queue", "Linked list"],
+      "answer": "Queue"
+    },
+    {
+      "question": "What is the time complexity of BFS when applied to an adjacency matrix representation of a graph with V vertices and E edges?",
+      "options": ["O(V)", "O(E)", "O(V + E)", "O(V log V)"],
+      "answer": "O(V + E)"
+    },
+    {
+      "question": "In BFS, which vertices are explored first?",
+      "options": [
+        "Vertices with lower degree",
+        "Vertices with higher degree",
+        "Vertices with the lowest value",
+        "Vertices with the highest value"
+      ],
+      "answer": "Vertices with the lowest value"
+    },
+    {
+      "question": "What is the order of traversal in BFS?",
+      "options": ["Depth-first", "Pre-order", "Post-order", "Level-order"],
+      "answer": "Level-order"
+    },
+    {
+      "question": "In BFS, which traversal strategy is employed to visit neighboring vertices of a vertex?",
+      "options": [
+        "Depth-first traversal",
+        "In-order traversal",
+        "Level-order traversal",
+        "Post-order traversal"
+      ],
+      "answer": "Level-order traversal"
+    },
+    {
+      "question": "Which of the following statements about BFS is true?",
+      "options": [
+        "BFS can be used to find the topological sorting of a graph.",
+        "BFS cannot handle graphs with cycles.",
+        "BFS is not optimal for finding the shortest path in an unweighted graph.",
+        "BFS explores vertices in the order they are discovered."
+      ],
+      "answer": "BFS explores vertices in the order they are discovered."
+    },
+    {
+      "question": "Which of the following is NOT a step in BFS?",
+      "options": [
+        "Enqueue the starting vertex",
+        "Dequeue the starting vertex",
+        "Enqueue neighboring vertices",
+        "Dequeue neighboring vertices"
+      ],
+      "answer": "Dequeue the starting vertex"
+    },
+    {
+      "question": "In BFS, when should a visited vertex be enqueued?",
+      "options": [
+        "Before exploring its neighbors",
+        "After exploring its neighbors",
+        "Before dequeueing its neighbors",
+        "After dequeueing its neighbors"
+      ],
+      "answer": "Before exploring its neighbors"
+    },
+    {
+      "question": "What is the space complexity of BFS?",
+      "options": ["O(V)", "O(E)", "O(V + E)", "O(V log V)"],
+      "answer": "O(V)"
+    }
+  ],
+  "DFS": [
+    {
+      "question": "What is Depth-First Search (DFS) primarily used for?",
+      "options": [
+        "Finding the shortest path in a weighted graph",
+        "Traversing and searching tree or graph data structures",
+        "Sorting elements in an array",
+        "Determining the longest path in a directed acyclic graph (DAG)"
+      ],
+      "answer": "Traversing and searching tree or graph data structures"
+    },
+    {
+      "question": "Which data structure is typically used for implementing DFS?",
+      "options": ["Queue", "Stack", "Priority queue", "Linked list"],
+      "answer": "Stack"
+    },
+    {
+      "question": "What is the time complexity of DFS when applied to an adjacency list representation of a graph with V vertices and E edges?",
+      "options": ["O(V)", "O(E)", "O(V + E)", "O(V log V)"],
+      "answer": "O(V + E)"
+    },
+    {
+      "question": "In DFS, which traversal strategy is employed to explore neighboring vertices?",
+      "options": [
+        "Depth-first traversal",
+        "In-order traversal",
+        "Level-order traversal",
+        "Post-order traversal"
+      ],
+      "answer": "Depth-first traversal"
+    },
+    {
+      "question": "What is the order of traversal in DFS?",
+      "options": ["Depth-first", "Pre-order", "Post-order", "Level-order"],
+      "answer": "Depth-first"
+    },
+    {
+      "question": "Which of the following statements about DFS is true?",
+      "options": [
+        "DFS always finds the shortest path in a graph.",
+        "DFS uses a FIFO strategy for exploring vertices.",
+        "DFS may result in a disconnected graph.",
+        "DFS explores vertices in the order they are discovered."
+      ],
+      "answer": "DFS may result in a disconnected graph."
+    },
+    {
+      "question": "What is the main disadvantage of using recursion for implementing DFS?",
+      "options": [
+        "Recursion has higher space complexity compared to iterative methods.",
+        "Recursion is slower than iterative methods.",
+        "Recursion may lead to stack overflow for large graphs.",
+        "Recursion cannot handle graphs with cycles."
+      ],
+      "answer": "Recursion may lead to stack overflow for large graphs."
+    },
+    {
+      "question": "Which of the following is NOT a step in DFS?",
+      "options": [
+        "Enqueue the starting vertex",
+        "Process the current vertex",
+        "Recursively explore neighboring vertices",
+        "Backtrack to the previous vertex"
+      ],
+      "answer": "Enqueue the starting vertex"
+    },
+    {
+      "question": "In DFS, when should a visited vertex be marked?",
+      "options": [
+        "Before exploring its neighbors",
+        "After exploring its neighbors",
+        "Before recursively calling DFS on its neighbors",
+        "After recursively calling DFS on its neighbors"
+      ],
+      "answer": "After exploring its neighbors"
+    },
+    {
+      "question": "What is the space complexity of DFS?",
+      "options": ["O(V)", "O(E)", "O(V + E)", "O(V log V)"],
+      "answer": "O(V)"
+    }
+  ],
+  "Binomial heap": [
+    {
+      "question": "What is a binomial tree?",
+      "options": [
+        "A tree where each node has at most two children",
+        "A tree where each node has exactly two children",
+        "A tree with a specific ordering of nodes",
+        "A tree used in binary search algorithms"
+      ],
+      "answer": "A tree where each node has exactly two children"
+    },
+    {
+      "question": "Which operation is NOT supported efficiently by a binomial heap?",
+      "options": ["Insertion", "Deletion", "Union", "Search"],
+      "answer": "Search"
+    },
+    {
+      "question": "In a binomial heap, what is the time complexity of inserting a new element?",
+      "options": ["O(log n)", "O(n)", "O(log^2 n)", "O(1)"],
+      "answer": "O(log n)"
+    },
+    {
+      "question": "What is the maximum height of a binomial tree with n nodes?",
+      "options": ["n", "2n", "log_2 n", "log_2 (n+1)"],
+      "answer": "log_2 (n+1)"
+    },
+    {
+      "question": "Which of the following is a property of a binomial tree of order k?",
+      "options": [
+        "It has k children",
+        "It has 2^k nodes",
+        "It has k+1 nodes",
+        "It has 2^(k+1) - 1 nodes"
+      ],
+      "answer": "It has 2^k nodes"
+    },
+    {
+      "question": "What operation is typically used to merge two binomial heaps?",
+      "options": ["Union", "Intersection", "Difference", "Addition"],
+      "answer": "Union"
+    },
+    {
+      "question": "Which of the following statements about binomial heaps is true?",
+      "options": [
+        "They are always balanced binary trees",
+        "They support constant time insertion and deletion",
+        "They are typically implemented using arrays",
+        "They have a worst-case time complexity of O(log n) for most operations"
+      ],
+      "answer": "They have a worst-case time complexity of O(log n) for most operations"
+    },
+    {
+      "question": "In a binomial heap, what is the purpose of the 'merge' operation?",
+      "options": [
+        "Combining two trees of the same order into one tree of the next order",
+        "Splitting a tree into smaller trees",
+        "Finding the minimum element in the heap",
+        "Deleting an element from the heap"
+      ],
+      "answer": "Combining two trees of the same order into one tree of the next order"
+    },
+    {
+      "question": "Which of the following is NOT a common application of binomial heaps?",
+      "options": [
+        "Priority queue",
+        "Sorting algorithms",
+        "Dijkstra's shortest path algorithm",
+        "Prim's minimum spanning tree algorithm"
+      ],
+      "answer": "Sorting algorithms"
+    },
+    {
+      "question": "What is the advantage of using a binomial heap over a binary heap?",
+      "options": [
+        "Binomial heaps have better worst-case time complexity for most operations",
+        "Binary heaps are more space efficient",
+        "Binomial heaps support more operations",
+        "Binary heaps are easier to implement"
+      ],
+      "answer": "Binomial heaps have better worst-case time complexity for most operations"
+    }
+  ],
+  "Winner tree": [
+    {
+      "question": "What is the purpose of a winner tree?",
+      "options": [
+        "To store elements in a sorted order",
+        "To efficiently find the maximum (or minimum) element among a set of elements",
+        "To balance binary search trees",
+        "To implement priority queues"
+      ],
+      "answer": "To efficiently find the maximum (or minimum) element among a set of elements"
+    },
+    {
+      "question": "In a winner tree, what do the leaves represent?",
+      "options": [
+        "Internal nodes",
+        "The maximum element",
+        "The elements themselves",
+        "The minimum element"
+      ],
+      "answer": "The elements themselves"
+    },
+    {
+      "question": "How are winner trees commonly used in algorithms?",
+      "options": [
+        "For graph traversal",
+        "For heap sort",
+        "For tournament-style algorithms",
+        "For binary search"
+      ],
+      "answer": "For tournament-style algorithms"
+    },
+    {
+      "question": "Which node of a winner tree contains the overall winner?",
+      "options": [
+        "Root node",
+        "Leaf nodes",
+        "Internal nodes",
+        "None of the above"
+      ],
+      "answer": "Root node"
+    },
+    {
+      "question": "What operation is performed to construct a winner tree?",
+      "options": ["Merge", "Compare", "Split", "Rotate"],
+      "answer": "Compare"
+    },
+    {
+      "question": "Which of the following is NOT a step in using a winner tree to find the maximum element?",
+      "options": [
+        "Initialize the winner tree",
+        "Insert elements in random order",
+        "Construct the winner tree",
+        "Access the root node"
+      ],
+      "answer": "Insert elements in random order"
+    },
+    {
+      "question": "What type of elements can be compared using a winner tree?",
+      "options": [
+        "Numbers only",
+        "Strings only",
+        "Any comparable elements",
+        "Only elements of the same type"
+      ],
+      "answer": "Any comparable elements"
+    },
+    {
+      "question": "How does a winner tree compare elements?",
+      "options": [
+        "Using hashing",
+        "By iterating through all elements",
+        "By comparing pairs of elements recursively",
+        "By performing binary search"
+      ],
+      "answer": "By comparing pairs of elements recursively"
+    },
+    {
+      "question": "Which data structure is NOT commonly implemented using winner trees?",
+      "options": ["Priority queue", "Heap", "Hash table", "Tournament bracket"],
+      "answer": "Hash table"
+    },
+    {
+      "question": "In a winner tree with n elements, how many comparisons are needed to find the maximum element?",
+      "options": ["n", "log n", "2n - 1", "n - 1"],
+      "answer": "2n - 1"
+    }
+  ],
+  "Bellmen ford algorithm": [
+    {
+      "question": "What is the Bellman-Ford algorithm used for?",
+      "options": [
+        "Finding the shortest path in a weighted directed graph with negative edge weights",
+        "Sorting elements in an array",
+        "Implementing a priority queue",
+        "Searching for an element in a binary search tree"
+      ],
+      "answer": "Finding the shortest path in a weighted directed graph with negative edge weights"
+    },
+    {
+      "question": "Which data structure is commonly used to represent graphs in the Bellman-Ford algorithm?",
+      "options": [
+        "Arrays",
+        "Linked lists",
+        "Hash tables",
+        "Adjacency matrices or adjacency lists"
+      ],
+      "answer": "Adjacency matrices or adjacency lists"
+    },
+    {
+      "question": "What is the time complexity of the Bellman-Ford algorithm?",
+      "options": ["O(V)", "O(V log V)", "O(V + E)", "O(V^2)"],
+      "answer": "O(V + E)"
+    },
+    {
+      "question": "In the context of the Bellman-Ford algorithm, what does 'V' represent?",
+      "options": [
+        "The number of vertices in the graph",
+        "The number of edges in the graph",
+        "The maximum possible weight of an edge",
+        "The source vertex"
+      ],
+      "answer": "The number of vertices in the graph"
+    },
+    {
+      "question": "What does the Bellman-Ford algorithm initialize the shortest distance to each vertex with?",
+      "options": [
+        "Positive infinity",
+        "Negative infinity",
+        "Zero",
+        "The weight of the source vertex to itself"
+      ],
+      "answer": "Positive infinity"
+    },
+    {
+      "question": "What is the purpose of the relaxation step in the Bellman-Ford algorithm?",
+      "options": [
+        "To initialize the shortest distances",
+        "To update the shortest distances if a shorter path is found",
+        "To remove edges with negative weights",
+        "To reverse the direction of edges in the graph"
+      ],
+      "answer": "To update the shortest distances if a shorter path is found"
+    },
+    {
+      "question": "What does a negative cycle in a graph indicate in the context of the Bellman-Ford algorithm?",
+      "options": [
+        "The graph has no shortest paths",
+        "The graph contains edges with negative weights",
+        "The graph has multiple shortest paths between some pairs of vertices",
+        "The graph has a cycle whose total weight is negative"
+      ],
+      "answer": "The graph has a cycle whose total weight is negative"
+    },
+    {
+      "question": "Which step in the Bellman-Ford algorithm detects negative cycles?",
+      "options": [
+        "Initialization",
+        "Relaxation",
+        "Shortest path determination",
+        "Negative cycle detection"
+      ],
+      "answer": "Negative cycle detection"
+    },
+    {
+      "question": "When does the Bellman-Ford algorithm terminate?",
+      "options": [
+        "After a fixed number of iterations",
+        "When all vertices have been visited",
+        "When no more relaxation can be performed",
+        "When a negative cycle is detected"
+      ],
+      "answer": "When no more relaxation can be performed"
+    },
+    {
+      "question": "What does the Bellman-Ford algorithm return if a negative cycle is detected?",
+      "options": [
+        "The shortest paths to all vertices",
+        "The shortest path from the source vertex to a specific target vertex",
+        "An error indicating the presence of a negative cycle",
+        "The length of the shortest path"
+      ],
+      "answer": "An error indicating the presence of a negative cycle"
+    }
+  ],
+  "Dials algorithm": [
+    {
+      "question": "What is the Dial's Algorithm used for?",
+      "options": [
+        "Finding the maximum flow in a network",
+        "Sorting elements in an array",
+        "Finding the shortest path in a graph with non-negative edge weights",
+        "Detecting negative cycles in a graph"
+      ],
+      "answer": "Finding the shortest path in a graph with non-negative edge weights"
+    },
+    {
+      "question": "Which data structure does the Dial's Algorithm utilize?",
+      "options": ["Arrays", "Linked lists", "Priority queues", "Stacks"],
+      "answer": "Arrays"
+    },
+    {
+      "question": "What does each bucket in the Dial's Algorithm contain?",
+      "options": [
+        "Vertices",
+        "Edges",
+        "Distances from the source vertex",
+        "Paths"
+      ],
+      "answer": "Vertices"
+    },
+    {
+      "question": "How are the buckets indexed in the Dial's Algorithm?",
+      "options": [
+        "By vertex IDs",
+        "By vertex distances from the source",
+        "By edge weights",
+        "By vertex degrees"
+      ],
+      "answer": "By vertex distances from the source"
+    },
+    {
+      "question": "What is the time complexity of the Dial's Algorithm?",
+      "options": ["O(V)", "O(V log V)", "O(V + E)", "O(E log V)"],
+      "answer": "O(V + E)"
+    },
+    {
+      "question": "When does the Dial's Algorithm terminate?",
+      "options": [
+        "When all vertices are visited",
+        "When all buckets are empty",
+        "When a negative cycle is detected",
+        "When the maximum flow is reached"
+      ],
+      "answer": "When all buckets are empty"
+    },
+    {
+      "question": "What operation is performed during each iteration of the Dial's Algorithm?",
+      "options": [
+        "Vertex relaxation",
+        "Edge relaxation",
+        "Bucket selection",
+        "Bucket sort"
+      ],
+      "answer": "Vertex relaxation"
+    },
+    {
+      "question": "What does the Dial's Algorithm prioritize during bucket selection?",
+      "options": [
+        "Buckets with the most vertices",
+        "Buckets with the fewest vertices",
+        "Buckets with the highest distances",
+        "Buckets with the lowest distances"
+      ],
+      "answer": "Buckets with the fewest vertices"
+    },
+    {
+      "question": "Which type of graphs is the Dial's Algorithm most suitable for?",
+      "options": [
+        "Graphs with negative edge weights",
+        "Graphs with positive edge weights",
+        "Graphs with non-negative edge weights and a limited range of weights",
+        "Graphs with arbitrary edge weights"
+      ],
+      "answer": "Graphs with non-negative edge weights and a limited range of weights"
+    },
+    {
+      "question": "What does the Dial's Algorithm return as output?",
+      "options": [
+        "The maximum flow in the network",
+        "The shortest paths from the source vertex to all other vertices",
+        "An error if a negative cycle is detected",
+        "The vertices visited during the traversal"
+      ],
+      "answer": "The shortest paths from the source vertex to all other vertices"
+    }
+  ],
+  "Topological sort": [
+    {
+      "question": "What is topological sorting used for?",
+      "options": [
+        "Finding shortest paths in a graph",
+        "Detecting cycles in a graph",
+        "Ordering tasks with dependencies",
+        "Generating minimum spanning trees"
+      ],
+      "answer": "Ordering tasks with dependencies"
+    },
+    {
+      "question": "Which of the following data structures is commonly used to implement topological sorting?",
+      "options": ["Queue", "Stack", "Array", "Heap"],
+      "answer": "Stack"
+    },
+    {
+      "question": "In a directed acyclic graph (DAG), topological sorting results in:",
+      "options": [
+        "A linear ordering of vertices",
+        "A minimum spanning tree",
+        "A cyclic dependency graph",
+        "A binary search tree"
+      ],
+      "answer": "A linear ordering of vertices"
+    },
+    {
+      "question": "Which algorithm is commonly used to perform topological sorting?",
+      "options": [
+        "Breadth-first search (BFS)",
+        "Depth-first search (DFS)",
+        "Dijkstra's algorithm",
+        "Prim's algorithm"
+      ],
+      "answer": "Depth-first search (DFS)"
+    },
+    {
+      "question": "In topological sorting, vertices with no incoming edges are processed:",
+      "options": ["First", "Last", "Randomly", "In any order"],
+      "answer": "First"
+    },
+    {
+      "question": "If a graph has a cycle, what happens during topological sorting?",
+      "options": [
+        "The algorithm fails",
+        "The cycle is ignored",
+        "The cycle is broken",
+        "The algorithm continues indefinitely"
+      ],
+      "answer": "The algorithm fails"
+    },
+    {
+      "question": "Topological sorting can be applied to which type of graphs?",
+      "options": [
+        "Directed graphs",
+        "Undirected graphs",
+        "Weighted graphs",
+        "Bipartite graphs"
+      ],
+      "answer": "Directed graphs"
+    },
+    {
+      "question": "Which of the following statements is true about topological sorting?",
+      "options": [
+        "It always produces a unique ordering of vertices.",
+        "It can only be applied to graphs with a single source and sink.",
+        "It can have multiple valid orderings for a given graph.",
+        "It has a time complexity of O(nlogn)."
+      ],
+      "answer": "It can have multiple valid orderings for a given graph."
+    },
+    {
+      "question": "In a directed acyclic graph (DAG), if there are multiple vertices with no incoming edges, which one is processed first during topological sorting?",
+      "options": [
+        "The vertex with the highest index",
+        "The vertex with the lowest index",
+        "Any of the vertices with no incoming edges",
+        "None of the above"
+      ],
+      "answer": "Any of the vertices with no incoming edges"
+    },
+    {
+      "question": "In a directed acyclic graph (DAG) with vertices a, b, c, d, and e and edges ab, bc, cd, and de, what would be the topological sorting order?",
+      "options": [
+        "a, b, c, d, e",
+        "e, d, c, b, a",
+        "a, e, b, c, d",
+        "a, b, c, e, d"
+      ],
+      "answer": "a, b, c, d, e"
+    }
+  ],
+  "Vertical order traversal": [
+    {
+      "question": "What does vertical order traversal of a binary tree involve?",
+      "options": [
+        "Traversing the tree level by level",
+        "Visiting nodes from left to right",
+        "Exploring nodes from top to bottom",
+        "Grouping nodes based on their horizontal distance from the root"
+      ],
+      "answer": "Grouping nodes based on their horizontal distance from the root"
+    },
+    {
+      "question": "Which data structure is commonly used to perform vertical order traversal?",
+      "options": ["Array", "Queue", "Stack", "Linked list"],
+      "answer": "Queue"
+    },
+    {
+      "question": "In vertical order traversal, nodes at the same horizontal distance are visited in which order?",
+      "options": ["Random", "Pre-order", "Level-order", "Post-order"],
+      "answer": "Level-order"
+    },
+    {
+      "question": "What is the time complexity of vertical order traversal in a binary tree with n nodes?",
+      "options": ["O(n)", "O(n log n)", "O(n^2)", "O(2^n)"],
+      "answer": "O(n)"
+    },
+    {
+      "question": "Which traversal technique is typically used to implement vertical order traversal?",
+      "options": [
+        "Depth-first traversal",
+        "Breadth-first traversal",
+        "In-order traversal",
+        "Pre-order traversal"
+      ],
+      "answer": "Breadth-first traversal"
+    },
+    {
+      "question": "In vertical order traversal, which node is visited first at a particular horizontal distance?",
+      "options": ["Left child", "Right child", "Root node", "Parent node"],
+      "answer": "Root node"
+    },
+    {
+      "question": "If two nodes in a binary tree have the same horizontal distance from the root, which one is visited first in vertical order traversal?",
+      "options": [
+        "Left node",
+        "Right node",
+        "It depends on the tree structure",
+        "Both nodes are visited simultaneously"
+      ],
+      "answer": "Left node"
+    },
+    {
+      "question": "Which of the following statements is true about vertical order traversal?",
+      "options": [
+        "It only works for balanced binary trees",
+        "It doesn't guarantee the nodes will be visited in sorted order",
+        "It preserves the original tree structure",
+        "It cannot handle binary trees with more than two children per node"
+      ],
+      "answer": "It doesn't guarantee the nodes will be visited in sorted order"
+    },
+    {
+      "question": "What is the space complexity of vertical order traversal?",
+      "options": ["O(n)", "O(log n)", "O(1)", "O(n^2)"],
+      "answer": "O(n)"
+    },
+    {
+      "question": "Which of the following scenarios might require additional techniques to handle during vertical order traversal?",
+      "options": [
+        "Binary tree with only one child per node",
+        "Binary tree with multiple nodes at the same horizontal distance",
+        "Binary tree with unbalanced branches",
+        "Binary tree with a height less than two"
+      ],
+      "answer": "Binary tree with multiple nodes at the same horizontal distance"
+    }
+  ],
+  "Boundary traversal": [
+    {
+      "question": "What does boundary traversal of a binary tree involve?",
+      "options": [
+        "Visiting all nodes in a left-to-right order",
+        "Exploring nodes from top to bottom",
+        "Traversing only the nodes on the boundary of the tree",
+        "Processing nodes in a bottom-up manner"
+      ],
+      "answer": "Traversing only the nodes on the boundary of the tree"
+    },
+    {
+      "question": "Which of the following nodes is included in the boundary traversal of a binary tree?",
+      "options": [
+        "Only leaf nodes",
+        "Only internal nodes",
+        "Both leaf and internal nodes",
+        "Neither leaf nor internal nodes"
+      ],
+      "answer": "Both leaf and internal nodes"
+    },
+    {
+      "question": "In boundary traversal, in what order are the nodes visited?",
+      "options": ["Pre-order", "In-order", "Post-order", "Level-order"],
+      "answer": "Pre-order"
+    },
+    {
+      "question": "What is the time complexity of boundary traversal in a binary tree with n nodes?",
+      "options": ["O(n)", "O(n log n)", "O(n^2)", "O(2^n)"],
+      "answer": "O(n)"
+    },
+    {
+      "question": "Which traversal technique is typically used to implement boundary traversal?",
+      "options": [
+        "Depth-first traversal",
+        "Breadth-first traversal",
+        "In-order traversal",
+        "Pre-order traversal"
+      ],
+      "answer": "Depth-first traversal"
+    },
+    {
+      "question": "In boundary traversal, which node is visited first?",
+      "options": ["Left child", "Right child", "Root node", "Leaf node"],
+      "answer": "Root node"
+    },
+    {
+      "question": "If a binary tree has only one node, how many nodes will be included in its boundary traversal?",
+      "options": ["0", "1", "2", "Depends on the value of the node"],
+      "answer": "1"
+    },
+    {
+      "question": "Which of the following statements is true about boundary traversal?",
+      "options": [
+        "It always starts from the leftmost leaf node",
+        "It includes all nodes except for the leaf nodes",
+        "It preserves the original tree structure",
+        "It guarantees that nodes are visited in an anti-clockwise manner"
+      ],
+      "answer": "It guarantees that nodes are visited in an anti-clockwise manner"
+    },
+    {
+      "question": "What is the space complexity of boundary traversal?",
+      "options": ["O(n)", "O(log n)", "O(1)", "O(n^2)"],
+      "answer": "O(n)"
+    },
+    {
+      "question": "Which of the following scenarios might require additional techniques to handle during boundary traversal?",
+      "options": [
+        "Binary tree with only one child per node",
+        "Binary tree with multiple nodes at the same level",
+        "Binary tree with unbalanced branches",
+        "Binary tree with a height less than two"
+      ],
+      "answer": "Binary tree with unbalanced branches"
+    }
+  ],
+  "Heap sort": [
+    {
+      "question": "What is heap sort primarily used for?",
+      "options": [
+        "Sorting linked lists",
+        "Sorting arrays",
+        "Searching in trees",
+        "Graph traversal"
+      ],
+      "answer": "Sorting arrays"
+    },
+    {
+      "question": "Which data structure is used to implement heap sort?",
+      "options": ["Queue", "Stack", "Heap", "Linked list"],
+      "answer": "Heap"
+    },
+    {
+      "question": "What type of heap is typically used in heap sort?",
+      "options": ["Max heap", "Min heap", "Binary tree", "AVL tree"],
+      "answer": "Max heap"
+    },
+    {
+      "question": "What is the time complexity of heap sort in the worst-case scenario?",
+      "options": ["O(n)", "O(n log n)", "O(n^2)", "O(2^n)"],
+      "answer": "O(n log n)"
+    },
+    {
+      "question": "In heap sort, which operation is used to ensure that the heap property is maintained?",
+      "options": ["Insertion", "Deletion", "Heapify", "Merge"],
+      "answer": "Heapify"
+    },
+    {
+      "question": "Which of the following statements is true about heap sort?",
+      "options": [
+        "It is a stable sorting algorithm",
+        "It requires additional storage space proportional to the size of the input",
+        "It performs better than quicksort in most cases",
+        "It is an in-place sorting algorithm"
+      ],
+      "answer": "It is an in-place sorting algorithm"
+    },
+    {
+      "question": "In heap sort, after building the heap, what is the root element of the heap?",
+      "options": [
+        "Maximum element",
+        "Minimum element",
+        "Median element",
+        "Random element"
+      ],
+      "answer": "Maximum element"
+    },
+    {
+      "question": "Which of the following is a drawback of heap sort?",
+      "options": [
+        "It is not a stable sorting algorithm",
+        "It cannot handle large datasets",
+        "It is not a comparison-based sorting algorithm",
+        "It is not suitable for parallel processing"
+      ],
+      "answer": "It is not a stable sorting algorithm"
+    },
+    {
+      "question": "What is the space complexity of heap sort?",
+      "options": ["O(n)", "O(log n)", "O(1)", "O(n^2)"],
+      "answer": "O(1)"
+    },
+    {
+      "question": "Which sorting algorithm does heap sort share similarities with in terms of its underlying data structure?",
+      "options": ["Bubble sort", "Merge sort", "Quick sort", "Selection sort"],
+      "answer": "Merge sort"
+    }
+  ],
+  "K-Array heap": [
+    {
+      "question": "What is a K-ary heap?",
+      "options": [
+        "A binary tree where each node has at most K children",
+        "A heap with K elements in each level",
+        "A tree where each node has exactly K children",
+        "A heap with K elements in total"
+      ],
+      "answer": "A binary tree where each node has at most K children"
+    },
+    {
+      "question": "In a K-ary heap, what is the maximum number of elements in the last level if there are N elements in total?",
+      "options": ["K", "K - 1", "N % K", "K^2"],
+      "answer": "N % K"
+    },
+    {
+      "question": "Which operation has a time complexity of O(log K) in a K-ary heap?",
+      "options": [
+        "Insertion",
+        "Deletion",
+        "Building a heap",
+        "Finding the minimum element"
+      ],
+      "answer": "Insertion"
+    },
+    {
+      "question": "How is a K-ary heap represented in memory?",
+      "options": [
+        "As a binary tree",
+        "As an array",
+        "As a linked list",
+        "As a balanced tree"
+      ],
+      "answer": "As an array"
+    },
+    {
+      "question": "What is the height of a K-ary heap with N elements?",
+      "options": ["log(N)", "log(K, N)", "N/K", "log(K) + log(N)"],
+      "answer": "log(K, N)"
+    },
+    {
+      "question": "Which operation requires the most work in a K-ary heap when removing the root element?",
+      "options": [
+        "Finding the parent node",
+        "Finding the children nodes",
+        "Reorganizing the heap",
+        "Deleting the root element"
+      ],
+      "answer": "Reorganizing the heap"
+    },
+    {
+      "question": "In a K-ary heap, what is the relationship between the index of a parent node and its children?",
+      "options": [
+        "The parent index is greater than its children indices",
+        "The parent index is equal to the sum of its children indices",
+        "The parent index is divisible by its children indices",
+        "The parent index is smaller than its children indices"
+      ],
+      "answer": "The parent index is divisible by its children indices"
+    },
+    {
+      "question": "Which of the following is true about a K-ary heap?",
+      "options": [
+        "It guarantees constant time for all operations",
+        "It is always a balanced tree",
+        "It is a complete binary tree",
+        "It does not support insertion operation"
+      ],
+      "answer": "It is a complete binary tree"
+    },
+    {
+      "question": "How many comparisons are needed in the worst-case scenario for finding the maximum element in a K-ary heap?",
+      "options": ["K", "log(K)", "K log(K)", "N"],
+      "answer": "K"
+    },
+    {
+      "question": "Which of the following is a disadvantage of using a large value of K in a K-ary heap?",
+      "options": [
+        "Faster insertion operation",
+        "Increased space efficiency",
+        "Slower heapification process",
+        "Reduced number of comparisons"
+      ],
+      "answer": "Slower heapification process"
+    }
+  ]
+}

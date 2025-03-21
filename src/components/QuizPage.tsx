@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
-import questionsData from '../data/questions.json';
+import questionsData from '../data/STSQuestions.json';
 import QuizWindow from './QuizWindow';
 import CompletionWindow from './CompletionWindow';
 
 // Define the structure of questions data by week
-type WeekData = {
-  [key in `week${number}`]: {
+type QuizData = {
+  [category: string]: {
     question: string;
     options: string[];
     answer: string;
@@ -22,11 +22,10 @@ type Question = {
 };
 
 // Type assertions for questionsData and selected week key
-const typedQuestionsData = questionsData as WeekData;
-type WeekKey = keyof WeekData | 'mixed';
+const typedQuestionsData = questionsData as QuizData;
 
 const QuizPage: React.FC = () => {
-  const { selectedWeek } = useParams<{ selectedWeek: WeekKey }>();
+  const { selectedCategory } = useParams<{ selectedCategory: string }>();
 
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -40,26 +39,26 @@ const QuizPage: React.FC = () => {
     const loadQuestions = () => {
       let selectedQuestions: Question[] = [];
 
-      if (selectedWeek === 'mixed') {
-        // Combine questions from all weeks
-        for (const week in typedQuestionsData) {
+      if (selectedCategory === 'mixed') {
+        // Combine questions from all categories
+        for (const category in typedQuestionsData) {
           selectedQuestions = selectedQuestions.concat(
-            typedQuestionsData[week as keyof WeekData]
+            typedQuestionsData[category as keyof QuizData]
           );
         }
       } else {
-        // Load questions from the specified week
+        // Load questions from the selected category
         selectedQuestions =
-          typedQuestionsData[selectedWeek as keyof WeekData] || [];
+          typedQuestionsData[selectedCategory as keyof QuizData] || [];
       }
 
-      // Shuffle questions
+      // Shuffle the questions
       selectedQuestions = selectedQuestions.sort(() => Math.random() - 0.5);
       setQuestions(selectedQuestions);
     };
 
     loadQuestions();
-  }, [selectedWeek]);
+  }, [selectedCategory]);
 
   const handleNextQuestion = (selectedOption: string) => {
     const currentQuestion = questions[currentQuestionIndex];
@@ -86,28 +85,33 @@ const QuizPage: React.FC = () => {
   };
 
   const handleRetry = () => {
-    // Reset states to retry the quiz
     setScore(0);
     setCurrentQuestionIndex(0);
     setIncorrectAnswers([]);
     setQuizCompleted(false);
-    // Reload questions if necessary
+
     const loadQuestions = () => {
       let selectedQuestions: Question[] = [];
-      if (selectedWeek === 'mixed') {
-        for (const week in typedQuestionsData) {
+
+      if (selectedCategory === 'mixed') {
+        // Combine questions from all categories
+        for (const category in typedQuestionsData) {
           selectedQuestions = selectedQuestions.concat(
-            typedQuestionsData[week as keyof WeekData]
+            typedQuestionsData[category as keyof QuizData]
           );
         }
       } else {
+        // Load questions from the selected category
         selectedQuestions =
-          typedQuestionsData[selectedWeek as keyof WeekData] || [];
+          typedQuestionsData[selectedCategory as keyof QuizData] || [];
       }
+
+      // Shuffle the questions
       selectedQuestions = selectedQuestions.sort(() => Math.random() - 0.5);
       setQuestions(selectedQuestions);
     };
-    loadQuestions();
+
+    loadQuestions(); // Call the updated function
   };
 
   return (

@@ -7,7 +7,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/quiz/:selectedWeek" element={<QuizPage />} />
+        <Route path="/quiz/:selectedCategory" element={<QuizPage />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>

@@ -1,0 +1,1028 @@
+{
+    "Playfair Cipher": [
+      {
+        "question": "What is the dimension of the key matrix used in the Playfair cipher?",
+        "options": [
+          "4×4",
+          "5×5",
+          "6×6",
+          "8×8"
+        ],
+        "answer": "5×5"
+      },
+      {
+        "question": "In the standard Playfair cipher, which two letters are typically combined into one cell?",
+        "options": [
+          "I and J",
+          "U and V",
+          "C and K",
+          "Q and Z"
+        ],
+        "answer": "I and J"
+      },
+      {
+        "question": "How is a digraph containing two identical letters handled during encryption?",
+        "options": [
+          "Omit the second letter",
+          "Insert an X between them",
+          "Replace one with a Z",
+          "Swap their positions"
+        ],
+        "answer": "Insert an X between them"
+      },
+      {
+        "question": "Which letter is most commonly used as the padding character in Playfair cipher?",
+        "options": [
+          "Z",
+          "Q",
+          "X",
+          "J"
+        ],
+        "answer": "X"
+      },
+      {
+        "question": "When encrypting a digraph whose letters are in the same row of the key matrix, each letter is replaced by the letter:",
+        "options": [
+          "Immediately above it",
+          "Immediately below it",
+          "Immediately to its right",
+          "Immediately to its left"
+        ],
+        "answer": "Immediately to its right"
+      },
+      {
+        "question": "When decrypting a digraph whose letters are in the same column of the key matrix, each letter is replaced by the letter:",
+        "options": [
+          "Immediately above it",
+          "Immediately below it",
+          "Immediately to its right",
+          "Immediately to its left"
+        ],
+        "answer": "Immediately above it"
+      },
+      {
+        "question": "If the letters of a digraph form the corners of a rectangle in the key matrix, encryption replaces each letter with the letter:",
+        "options": [
+          "In the same row but in the column of the other letter",
+          "In the same column but in the row of the other letter",
+          "Diagonally opposite it",
+          "At the center of the rectangle"
+        ],
+        "answer": "In the same row but in the column of the other letter"
+      },
+      {
+        "question": "What is the first step in preparing the Playfair key square from a keyword?",
+        "options": [
+          "Fill with the alphabet in order",
+          "Remove duplicate letters from the keyword",
+          "Reverse the keyword",
+          "Convert the keyword to uppercase"
+        ],
+        "answer": "Remove duplicate letters from the keyword"
+      },
+      {
+        "question": "Which of the following makes the Playfair cipher more secure than a simple monoalphabetic substitution?",
+        "options": [
+          "Use of a keyword",
+          "Encryption of digraphs instead of single letters",
+          "Larger key space",
+          "Polybius square structure"
+        ],
+        "answer": "Encryption of digraphs instead of single letters"
+      },
+      {
+        "question": "When decrypting a digraph in the Playfair cipher that lies in the same row, you shift each letter:",
+        "options": [
+          "One position to the right",
+          "One position to the left",
+          "One position up",
+          "One position down"
+        ],
+        "answer": "One position to the left"
+      }
+    ],
+    
+    "Hill Cipher": [
+        {
+          "question": "What is the primary mathematical operation used in Hill cipher encryption?",
+          "options": [
+            "Matrix multiplication",
+            "Matrix addition",
+            "Polynomial multiplication",
+            "Bitwise XOR"
+          ],
+          "answer": "Matrix multiplication"
+        },
+        {
+          "question": "What condition must the key matrix satisfy for the Hill cipher to be decryptable?",
+          "options": [
+            "Its determinant must be even",
+            "Its determinant must be non-zero",
+            "Its determinant must be invertible modulo 26",
+            "All entries must be non-negative"
+          ],
+          "answer": "Its determinant must be invertible modulo 26"
+        },
+        {
+          "question": "In the original Hill cipher proposed by Lester Hill, what block size was used?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": "2"
+        },
+        {
+          "question": "How are plaintext letters typically mapped to numerical values in the Hill cipher?",
+          "options": [
+            "A = 1 to Z = 26",
+            "A = 0 to Z = 25",
+            "A = 1 to Z = 26 then subtract 1",
+            "A = 0 to Z = 26"
+          ],
+          "answer": "A = 0 to Z = 25"
+        },
+        {
+          "question": "Which formula correctly represents Hill cipher encryption?",
+          "options": [
+            "C = K + P (mod 26)",
+            "C = K × P (mod 26)",
+            "P = K × C (mod 26)",
+            "C = P × K (mod 26)"
+          ],
+          "answer": "C = K × P (mod 26)"
+        },
+        {
+          "question": "Which formula correctly represents Hill cipher decryption?",
+          "options": [
+            "P = K × C (mod 26)",
+            "P = K⁻¹ × C (mod 26)",
+            "C = K⁻¹ × P (mod 26)",
+            "P = C × K (mod 26)"
+          ],
+          "answer": "P = K⁻¹ × C (mod 26)"
+        },
+        {
+          "question": "If using a 3×3 key matrix, how many plaintext characters are processed at a time?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "9"
+          ],
+          "answer": "3"
+        },
+        {
+          "question": "What happens if the key matrix determinant shares a common factor with 26?",
+          "options": [
+            "Encryption fails",
+            "Key is not invertible modulo 26",
+            "Cipher becomes linear",
+            "Decryption is ambiguous"
+          ],
+          "answer": "Key is not invertible modulo 26"
+        },
+        {
+          "question": "Which of the following is the first step in the Hill cipher decryption process?",
+          "options": [
+            "Compute the inverse of the key matrix modulo 26",
+            "Split ciphertext into blocks",
+            "Map ciphertext letters to numbers",
+            "Multiply by the key matrix"
+          ],
+          "answer": "Compute the inverse of the key matrix modulo 26"
+        },
+        {
+          "question": "How is the inverse of the key matrix computed in the Hill cipher?",
+          "options": [
+            "Using Gaussian elimination over the reals",
+            "Multiplying the adjugate by the modular inverse of the determinant",
+            "Transposing the key matrix",
+            "Forming the matrix of cofactors only"
+          ],
+          "answer": "Multiplying the adjugate by the modular inverse of the determinant"
+        }
+    ],
+    "RSA Encryption and Decryption": [
+    {
+      "question": "What is the first step in generating RSA keys?",
+      "options": [
+        "Choosing two large prime numbers",
+        "Computing the modulus n",
+        "Selecting the public exponent e",
+        "Calculating Euler's totient function"
+      ],
+      "answer": "Choosing two large prime numbers"
+    },
+    {
+      "question": "In RSA, the modulus n is computed as:",
+      "options": [
+        "p + q",
+        "p × q",
+        "p^q",
+        "p^2 + q^2"
+      ],
+      "answer": "p × q"
+    },
+    {
+      "question": "Euler's totient function φ(n) for RSA is calculated as:",
+      "options": [
+        "(p + 1)(q + 1)",
+        "(p - 1)(q - 1)",
+        "pq - 1",
+        "p + q - 1"
+      ],
+      "answer": "(p - 1)(q - 1)"
+    },
+    {
+      "question": "The public exponent e must satisfy which condition?",
+      "options": [
+        "1 < e < φ(n) and gcd(e, φ(n)) = 1",
+        "e is a prime number",
+        "e divides φ(n)",
+        "e > n"
+      ],
+      "answer": "1 < e < φ(n) and gcd(e, φ(n)) = 1"
+    },
+    {
+      "question": "The private exponent d is computed as:",
+      "options": [
+        "e^(-1) mod n",
+        "e^(-1) mod φ(n)",
+        "φ(n)^(-1) mod e",
+        "n^(-1) mod e"
+      ],
+      "answer": "e^(-1) mod φ(n)"
+    },
+    {
+      "question": "RSA encryption of plaintext m is given by:",
+      "options": [
+        "m^e mod n",
+        "m^d mod n",
+        "e^m mod n",
+        "d^m mod n"
+      ],
+      "answer": "m^e mod n"
+    },
+    {
+      "question": "RSA decryption of ciphertext c is given by:",
+      "options": [
+        "c^e mod n",
+        "c^d mod n",
+        "e^c mod n",
+        "d^c mod n"
+      ],
+      "answer": "c^d mod n"
+    },
+    {
+      "question": "The security of RSA is primarily based on:",
+      "options": [
+        "The discrete logarithm problem",
+        "The difficulty of factoring large integers",
+        "The elliptic curve discrete logarithm problem",
+        "The subset sum problem"
+      ],
+      "answer": "The difficulty of factoring large integers"
+    },
+    {
+      "question": "Which padding scheme is commonly used to secure RSA against chosen ciphertext attacks?",
+      "options": [
+        "PKCS#1 v1.5",
+        "OAEP",
+        "PSS",
+        "None"
+      ],
+      "answer": "OAEP"
+    },
+    {
+      "question": "Which of the following pairs constitutes the RSA public key?",
+      "options": [
+        "(n, e)",
+        "(n, d)",
+        "(p, q)",
+        "(d, e)"
+      ],
+      "answer": "(n, e)"
+    }
+    ],
+    "AES, DES and SDES": [
+    {
+      "question": "What is the block size of the DES algorithm?",
+      "options": [
+        "56 bits",
+        "64 bits",
+        "128 bits",
+        "32 bits"
+      ],
+      "answer": "64 bits"
+    },
+    {
+      "question": "What is the effective key length of DES?",
+      "options": [
+        "56 bits",
+        "64 bits",
+        "128 bits",
+        "32 bits"
+      ],
+      "answer": "56 bits"
+    },
+    {
+      "question": "How many rounds are there in the DES algorithm?",
+      "options": [
+        "8",
+        "16",
+        "32",
+        "48"
+      ],
+      "answer": "16"
+    },
+    {
+      "question": "What is the block size of the AES algorithm?",
+      "options": [
+        "64 bits",
+        "128 bits",
+        "192 bits",
+        "256 bits"
+      ],
+      "answer": "128 bits"
+    },
+    {
+      "question": "Which of the following is NOT a valid key size for AES?",
+      "options": [
+        "128 bits",
+        "192 bits",
+        "256 bits",
+        "512 bits"
+      ],
+      "answer": "512 bits"
+    },
+    {
+      "question": "How many rounds does AES-256 use?",
+      "options": [
+        "10",
+        "12",
+        "14",
+        "16"
+      ],
+      "answer": "14"
+    },
+    {
+      "question": "In Simplified DES (SDES), how many rounds are used?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": "2"
+    },
+    {
+      "question": "What is the key size in Simplified DES (SDES)?",
+      "options": [
+        "8 bits",
+        "10 bits",
+        "16 bits",
+        "56 bits"
+      ],
+      "answer": "10 bits"
+    },
+    {
+      "question": "Which network structure does the AES algorithm use?",
+      "options": [
+        "Feistel network",
+        "Substitution-Permutation network",
+        "Stream cipher",
+        "Hash function"
+      ],
+      "answer": "Substitution-Permutation network"
+    },
+    {
+      "question": "Which of the following algorithms uses a Feistel network structure?",
+      "options": [
+        "AES",
+        "DES",
+        "RSA",
+        "MD5"
+      ],
+      "answer": "DES"
+    }
+    ],
+    "RC4": [
+    {
+      "question": "What type of cipher is RC4?",
+      "options": [
+        "Block cipher",
+        "Stream cipher",
+        "Hash function",
+        "Public-key cipher"
+      ],
+      "answer": "Stream cipher"
+    },
+    {
+      "question": "Who is credited with designing the RC4 algorithm?",
+      "options": [
+        "Whitfield Diffie",
+        "Martin Hellman",
+        "Ron Rivest",
+        "Claude Shannon"
+      ],
+      "answer": "Ron Rivest"
+    },
+    {
+      "question": "What does KSA stand for in the context of RC4?",
+      "options": [
+        "Key Stream Algorithm",
+        "Key Scheduling Algorithm",
+        "Key Setup Algorithm",
+        "Key Sorting Algorithm"
+      ],
+      "answer": "Key Scheduling Algorithm"
+    },
+    {
+      "question": "What is the primary output of RC4's PRGA (Pseudo-Random Generation Algorithm)?",
+      "options": [
+        "Round keys",
+        "Key stream bytes",
+        "Substitution tables",
+        "Initialization vectors"
+      ],
+      "answer": "Key stream bytes"
+    },
+    {
+      "question": "Which of the following is a known vulnerability of RC4?",
+      "options": [
+        "Small block size",
+        "Weak key schedule",
+        "Biases in the key stream",
+        "Insecure padding"
+      ],
+      "answer": "Biases in the key stream"
+    },
+    {
+      "question": "What is the size of the state array S in RC4?",
+      "options": [
+        "128 bytes",
+        "256 bytes",
+        "512 bytes",
+        "1024 bytes"
+      ],
+      "answer": "256 bytes"
+    },
+    {
+      "question": "RC4 supports keys up to how many bytes in length?",
+      "options": [
+        "16 bytes",
+        "32 bytes",
+        "128 bytes",
+        "256 bytes"
+      ],
+      "answer": "256 bytes"
+    },
+    {
+      "question": "How is RC4 encryption performed on the plaintext?",
+      "options": [
+        "Modular addition with the key stream",
+        "XOR with the key stream",
+        "Substitution using S-boxes",
+        "Permutation of bits"
+      ],
+      "answer": "XOR with the key stream"
+    },
+    {
+      "question": "What is the purpose of the swap operation in RC4's KSA and PRGA?",
+      "options": [
+        "To generate subkeys",
+        "To randomize the internal state",
+        "To compress the key",
+        "To pad the plaintext"
+      ],
+      "answer": "To randomize the internal state"
+    },
+    {
+      "question": "Which protocol historically used RC4 as its default cipher?",
+      "options": [
+        "SSH",
+        "IPsec",
+        "SSL/TLS",
+        "Kerberos"
+      ],
+      "answer": "SSL/TLS"
+    }
+    ],
+    "ElGamal Encryption and Decryption": [
+        {
+          "question": "What is the first step in ElGamal key generation?",
+          "options": [
+            "Selecting a large prime p",
+            "Choosing the private key x",
+            "Computing the public key y",
+            "Generating a random k"
+          ],
+          "answer": "Selecting a large prime p"
+        },
+        {
+          "question": "Which of the following correctly represents the ElGamal public key?",
+          "options": [
+            "(p, g, x)",
+            "(p, g, y)",
+            "(g, x, y)",
+            "(p, x, y)"
+          ],
+          "answer": "(p, g, y)"
+        },
+        {
+          "question": "What constitutes the private key in ElGamal?",
+          "options": [
+            "p",
+            "g",
+            "x",
+            "y"
+          ],
+          "answer": "x"
+        },
+        {
+          "question": "What property must the random integer k satisfy in ElGamal encryption?",
+          "options": [
+            "gcd(k, p-1) = 1",
+            "1 ≤ k ≤ p−2",
+            "k is even",
+            "k divides p−1"
+          ],
+          "answer": "1 ≤ k ≤ p−2"
+        },
+        {
+          "question": "Which of the following describes the ElGamal ciphertext for message m?",
+          "options": [
+            "(g^k mod p, m + y^k mod p)",
+            "(g^k mod p, m * y^k mod p)",
+            "(k^g mod p, m * y^k mod p)",
+            "(g^k mod p, m^k mod p)"
+          ],
+          "answer": "(g^k mod p, m * y^k mod p)"
+        },
+        {
+          "question": "Which formula is used to decrypt an ElGamal ciphertext (c1, c2)?",
+          "options": [
+            "m = c2 - c1^x mod p",
+            "m = c2 * c1^x mod p",
+            "m = c2 * (c1^x)^{-1} mod p",
+            "m = c2 * (c1^{-x}) mod p"
+          ],
+          "answer": "m = c2 * (c1^x)^{-1} mod p"
+        },
+        {
+          "question": "The security of ElGamal is based on which hard problem?",
+          "options": [
+            "Integer factorization",
+            "Discrete logarithm problem",
+            "Elliptic curve discrete log",
+            "Subset sum problem"
+          ],
+          "answer": "Discrete logarithm problem"
+        },
+        {
+          "question": "What is an advantage of ElGamal encryption over RSA?",
+          "options": [
+            "Deterministic output",
+            "Smaller key size",
+            "Homomorphic multiplication",
+            "Faster decryption"
+          ],
+          "answer": "Homomorphic multiplication"
+        },
+        {
+          "question": "What is a primary disadvantage of ElGamal encryption?",
+          "options": [
+            "Ciphertext is twice the size of plaintext",
+            "Cannot be used for signatures",
+            "Requires factoring large integers",
+            "No padding schemes available"
+          ],
+          "answer": "Ciphertext is twice the size of plaintext"
+        },
+        {
+          "question": "Which digital signature algorithm is derived from ElGamal?",
+          "options": [
+            "RSA",
+            "DSA",
+            "ECDSA",
+            "Schnorr"
+          ],
+          "answer": "DSA"
+        }
+    ],
+    "RSA Digital Signature": [
+    {
+      "question": "Which security property is provided by an RSA digital signature?",
+      "options": [
+        "Confidentiality",
+        "Integrity and authenticity",
+        "Forward secrecy",
+        "Key exchange"
+      ],
+      "answer": "Integrity and authenticity"
+    },
+    {
+      "question": "What is the formula for generating an RSA signature on a message hash H(m)?",
+      "options": [
+        "s = H(m)^e mod n",
+        "s = H(m)^d mod n",
+        "s = m^d mod n",
+        "s = m^e mod n"
+      ],
+      "answer": "s = H(m)^d mod n"
+    },
+    {
+      "question": "How is an RSA signature s verified against a message hash H(m)?",
+      "options": [
+        "Check that s^d mod n = H(m)",
+        "Check that s^e mod n = H(m)",
+        "Check that s^e mod n = m",
+        "Check that s^d mod n = m"
+      ],
+      "answer": "Check that s^e mod n = H(m)"
+    },
+    {
+      "question": "Which key component is used to create (sign) an RSA digital signature?",
+      "options": [
+        "The public exponent e",
+        "The private exponent d",
+        "The modulus n",
+        "The public key (n, e)"
+      ],
+      "answer": "The private exponent d"
+    },
+    {
+      "question": "Which key component is used to verify an RSA digital signature?",
+      "options": [
+        "The private exponent d",
+        "The public exponent e",
+        "The modulus n",
+        "The private key (n, d)"
+      ],
+      "answer": "The public exponent e"
+    },
+    {
+      "question": "Which padding scheme is recommended for RSA signatures to provide probabilistic security?",
+      "options": [
+        "PKCS#1 v1.5",
+        "OAEP",
+        "PSS",
+        "X9.31"
+      ],
+      "answer": "PSS"
+    },
+    {
+      "question": "What is the primary role of the hash function in RSA digital signatures?",
+      "options": [
+        "To encrypt the message",
+        "To compress the message to a fixed-size digest",
+        "To generate random padding",
+        "To derive the private key"
+      ],
+      "answer": "To compress the message to a fixed-size digest"
+    },
+    {
+      "question": "Which aspect of RSA digital signatures ensures non-repudiation?",
+      "options": [
+        "Use of a public key for signing",
+        "Use of the private key for signing",
+        "Use of symmetric encryption",
+        "Use of a random nonce"
+      ],
+      "answer": "Use of the private key for signing"
+    },
+    {
+      "question": "What vulnerability does RSA-PSS mitigate compared to PKCS#1 v1.5 signatures?",
+      "options": [
+        "Timing attacks",
+        "Deterministic signature outputs",
+        "Weak key generation",
+        "Side-channel attacks"
+      ],
+      "answer": "Deterministic signature outputs"
+    },
+    {
+      "question": "Which parameter most directly affects the security strength of an RSA signature?",
+      "options": [
+        "The size of the modulus n",
+        "The value of the public exponent e",
+        "The choice of hash function only",
+        "The network protocol used"
+      ],
+      "answer": "The size of the modulus n"
+    }
+    ],
+    "MD5 Hashing": [
+    {
+      "question": "What is the output length of an MD5 hash?",
+      "options": [
+        "128 bits",
+        "160 bits",
+        "256 bits",
+        "512 bits"
+      ],
+      "answer": "128 bits"
+    },
+    {
+      "question": "Which structure does MD5 use to process message blocks?",
+      "options": [
+        "Feistel network",
+        "Merkle–Damgård",
+        "Substitution–Permutation network",
+        "Linear feedback shift register"
+      ],
+      "answer": "Merkle–Damgård"
+    },
+    {
+      "question": "What is the block size (in bits) that MD5 processes at a time?",
+      "options": [
+        "512 bits",
+        "256 bits",
+        "1024 bits",
+        "128 bits"
+      ],
+      "answer": "512 bits"
+    },
+    {
+      "question": "How many rounds of operations does MD5 perform on each 512-bit block?",
+      "options": [
+        "4",
+        "8",
+        "16",
+        "64"
+      ],
+      "answer": "4"
+    },
+    {
+      "question": "Who designed the MD5 hashing algorithm?",
+      "options": [
+        "Ron Rivest",
+        "Whitfield Diffie",
+        "Bruce Schneier",
+        "Martin Hellman"
+      ],
+      "answer": "Ron Rivest"
+    },
+    {
+      "question": "MD5 padding appends a '1' bit followed by '0' bits until the message length is congruent to what modulo 512?",
+      "options": [
+        "448",
+        "512",
+        "256",
+        "384"
+      ],
+      "answer": "448"
+    },
+    {
+      "question": "How many 32‑bit words are used to hold the state in MD5?",
+      "options": [
+        "4",
+        "2",
+        "8",
+        "16"
+      ],
+      "answer": "4"
+    },
+    {
+      "question": "Which cryptographic property of MD5 has been demonstrably broken?",
+      "options": [
+        "Collision resistance",
+        "Preimage resistance",
+        "Second preimage resistance",
+        "Keyed‑hash message authentication"
+      ],
+      "answer": "Collision resistance"
+    },
+    {
+      "question": "Despite its vulnerabilities, MD5 is still commonly used for:",
+      "options": [
+        "Digital signatures",
+        "Password storage",
+        "File integrity checks",
+        "SSL/TLS handshakes"
+      ],
+      "answer": "File integrity checks"
+    },
+    {
+      "question": "The final MD5 digest is produced by concatenating:",
+      "options": [
+        "Four 32‑bit words",
+        "Two 64‑bit words",
+        "Eight 16‑bit words",
+        "Sixteen 8‑bit bytes"
+      ],
+      "answer": "Four 32‑bit words"
+    }
+    ],
+    "ElGamal Digital Signature": [
+    {
+      "question": "What is the first step in ElGamal digital signature key generation?",
+      "options": [
+        "Selecting a large prime p",
+        "Choosing the private key x",
+        "Computing the public key y",
+        "Generating a random k"
+      ],
+      "answer": "Selecting a large prime p"
+    },
+    {
+      "question": "Which of the following constitutes the private key in ElGamal digital signature?",
+      "options": [
+        "p",
+        "g",
+        "x",
+        "y"
+      ],
+      "answer": "x"
+    },
+    {
+      "question": "Which of the following constitutes the public key in ElGamal digital signature?",
+      "options": [
+        "(p, g, x)",
+        "(p, g, y)",
+        "(g, x, y)",
+        "(p, x, y)"
+      ],
+      "answer": "(p, g, y)"
+    },
+    {
+      "question": "How is the signature component r computed in ElGamal digital signature?",
+      "options": [
+        "r = g^k mod p",
+        "r = y^k mod p",
+        "r = k^g mod p",
+        "r = g^x mod p"
+      ],
+      "answer": "r = g^k mod p"
+    },
+    {
+      "question": "Which formula is used to compute the signature component s?",
+      "options": [
+        "s = k^{-1}(H(m) + x r) mod (p-1)",
+        "s = k^{-1}(H(m) - x r) mod (p-1)",
+        "s = k(H(m) - x r) mod p",
+        "s = k^{-1}(H(m) - x r) mod p"
+      ],
+      "answer": "s = k^{-1}(H(m) - x r) mod (p-1)"
+    },
+    {
+      "question": "What condition must the random k satisfy in ElGamal digital signature?",
+      "options": [
+        "gcd(k, p) = 1",
+        "gcd(k, p-1) = 1",
+        "k < p",
+        "k divides p-1"
+      ],
+      "answer": "gcd(k, p-1) = 1"
+    },
+    {
+      "question": "Which equation is used to verify an ElGamal digital signature (r, s) for message m?",
+      "options": [
+        "g^{H(m)} ≡ y^r r^s mod p",
+        "g^{H(m)} ≡ y^s r^r mod p",
+        "g^{m} ≡ y^r r^s mod p",
+        "g^{H(m)} ≡ y^r s^r mod p"
+      ],
+      "answer": "g^{H(m)} ≡ y^r r^s mod p"
+    },
+    {
+      "question": "What property does ElGamal digital signature provide?",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Non-repudiation",
+        "Key exchange"
+      ],
+      "answer": "Non-repudiation"
+    },
+    {
+      "question": "What vulnerability arises if the same k is reused to sign two different messages?",
+      "options": [
+        "Signature becomes invalid",
+        "Private key x can be recovered",
+        "Public key y is compromised",
+        "Ciphertext collisions occur"
+      ],
+      "answer": "Private key x can be recovered"
+    },
+    {
+      "question": "Which hash function property is crucial before applying ElGamal digital signature?",
+      "options": [
+        "Collision resistance",
+        "Preimage resistance",
+        "Second preimage resistance",
+        "All of the above"
+      ],
+      "answer": "Collision resistance"
+    }
+    ],
+    "Diffie-Hellman Key Exchange": [
+    {
+      "question": "What is the primary purpose of the Diffie-Hellman key exchange?",
+      "options": [
+        "To authenticate communicating parties",
+        "To establish a shared secret over an insecure channel",
+        "To encrypt messages directly",
+        "To sign digital documents"
+      ],
+      "answer": "To establish a shared secret over an insecure channel"
+    },
+    {
+      "question": "Which mathematical problem underlies the security of Diffie-Hellman?",
+      "options": [
+        "Integer factorization problem",
+        "Discrete logarithm problem",
+        "Subset sum problem",
+        "Elliptic curve discrete logarithm problem"
+      ],
+      "answer": "Discrete logarithm problem"
+    },
+    {
+      "question": "Which of the following are the public parameters in Diffie-Hellman?",
+      "options": [
+        "Prime p and generator g",
+        "Private exponents a and b",
+        "Shared secret s",
+        "Public keys A and B"
+      ],
+      "answer": "Prime p and generator g"
+    },
+    {
+      "question": "What does each party keep secret in the Diffie-Hellman exchange?",
+      "options": [
+        "The prime p",
+        "The generator g",
+        "Their private exponent",
+        "The other party’s public key"
+      ],
+      "answer": "Their private exponent"
+    },
+    {
+      "question": "How is each party’s public key computed?",
+      "options": [
+        "g + x mod p",
+        "g^x mod p",
+        "x^g mod p",
+        "p^x mod g"
+      ],
+      "answer": "g^x mod p"
+    },
+    {
+      "question": "How do both parties compute the shared secret?",
+      "options": [
+        "Raise p to the sum of exponents mod g",
+        "Multiply their exponents mod p",
+        "Raise the other party’s public key to their private exponent mod p",
+        "Add the public keys mod p"
+      ],
+      "answer": "Raise the other party’s public key to their private exponent mod p"
+    },
+    {
+      "question": "Which attack is Diffie-Hellman vulnerable to without authentication?",
+      "options": [
+        "Replay attack",
+        "Man-in-the-middle attack",
+        "Brute-force attack",
+        "Side-channel attack"
+      ],
+      "answer": "Man-in-the-middle attack"
+    },
+    {
+      "question": "Which type of group is typically used in the classic Diffie-Hellman protocol?",
+      "options": [
+        "Additive group of integers modulo p",
+        "Multiplicative group of integers modulo p",
+        "Elliptic curve group over a finite field",
+        "Symmetric group S_n"
+      ],
+      "answer": "Multiplicative group of integers modulo p"
+    },
+    {
+      "question": "What variant of Diffie-Hellman provides forward secrecy by using ephemeral keys?",
+      "options": [
+        "Static Diffie-Hellman",
+        "Ephemeral Diffie-Hellman (DHE)",
+        "MQV",
+        "RSA key exchange"
+      ],
+      "answer": "Ephemeral Diffie-Hellman (DHE)"
+    },
+    {
+      "question": "Which step ensures both parties derive the same shared secret?",
+      "options": [
+        "Using the same private exponent",
+        "Exchanging private exponents directly",
+        "Raising the received public key to their own private exponent",
+        "Multiplying public parameters p and g"
+      ],
+      "answer": "Raising the received public key to their own private exponent"
+    }
+    ]
+}
+
+
+  
+  
+  

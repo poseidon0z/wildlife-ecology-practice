@@ -1,7 +1,7 @@
 // src/components/QuizSelection.tsx
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import questionsData from "../data/CryptoQuestions.json";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import questionsData from '../data/CryptoQuestions.json';
 
 // Define category names instead of week numbers
 const getQuizCategories = (): string[] => {
@@ -26,11 +26,11 @@ const QuizSelection: React.FC = () => {
 
   // Navigate to mixed quiz
   const handleMixedClick = () => {
-    navigate("/quiz/mixed");
+    navigate('/quiz/mixed');
   };
 
   const handleJaldiTenClick = () => {
-    navigate("/quiz/जल्दी10");
+    navigate('/quiz/जल्दी10');
   };
 
   return (
@@ -77,13 +77,6 @@ const QuizSelection: React.FC = () => {
           Quiz
         </button>
       </div>
-
-      <p className="text-white">
-        Quiz questions sourced from{" "}
-        <a className="text-blue-500" href="https://github.com/sr2echa">
-          @Sreecharan
-        </a>
-      </p>
     </div>
   );
 };

@@ -77,13 +77,6 @@ const QuizSelection: React.FC = () => {
           Quiz
         </button>
       </div>
-
-      <p className="text-white">
-        Quiz questions sourced from{" "}
-        <a className="text-blue-500" href="https://github.com/sr2echa">
-          @Sreecharan
-        </a>
-      </p>
     </div>
   );
 };

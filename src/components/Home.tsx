@@ -1,7 +1,7 @@
 // src/components/QuizSelection.tsx
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import questionsData from "../data/CryptoQuestions.json";
+import questionsData from "../data/conservationEconomics.json";
 
 // Define category names instead of week numbers
 const getQuizCategories = (): string[] => {

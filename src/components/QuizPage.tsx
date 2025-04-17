@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-import questionsData from "../data/CryptoQuestions.json";
+import questionsData from "../data/conservationEconomics.json";
 import QuizWindow from "./QuizWindow";
 import CompletionWindow from "./CompletionWindow";
 

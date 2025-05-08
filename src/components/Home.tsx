@@ -1,7 +1,7 @@
 // src/components/QuizSelection.tsx
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import questionsData from "../data/conservationEconomics.json";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import questionsData from '../data/STSQuestions.json';
 
 // Define category names instead of week numbers
 const getQuizCategories = (): string[] => {
@@ -26,11 +26,11 @@ const QuizSelection: React.FC = () => {
 
   // Navigate to mixed quiz
   const handleMixedClick = () => {
-    navigate("/quiz/mixed");
+    navigate('/quiz/mixed');
   };
 
   const handleJaldiTenClick = () => {
-    navigate("/quiz/जल्दी10");
+    navigate('/quiz/जल्दी10');
   };
 
   return (

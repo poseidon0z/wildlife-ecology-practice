@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 
-import questionsData from "../data/conservationEconomics.json";
-import QuizWindow from "./QuizWindow";
-import CompletionWindow from "./CompletionWindow";
+import questionsData from '../data/STSQuestions.json';
+import QuizWindow from './QuizWindow';
+import CompletionWindow from './CompletionWindow';
 
 // Define the structure of questions data by week
 type QuizData = {
@@ -39,14 +39,14 @@ const QuizPage: React.FC = () => {
     const loadQuestions = () => {
       let selectedQuestions: Question[] = [];
 
-      if (selectedCategory === "mixed") {
+      if (selectedCategory === 'mixed') {
         // Combine questions from all categories
         for (const category in typedQuestionsData) {
           selectedQuestions = selectedQuestions.concat(
             typedQuestionsData[category as keyof QuizData]
           );
         }
-      } else if (selectedCategory === "जल्दी10") {
+      } else if (selectedCategory === 'जल्दी10') {
         // Select only the first 10 questions across all weeks
         const allQuestions = [];
         for (const category in typedQuestionsData) {
@@ -103,14 +103,14 @@ const QuizPage: React.FC = () => {
     const loadQuestions = () => {
       let selectedQuestions: Question[] = [];
 
-      if (selectedCategory === "mixed") {
+      if (selectedCategory === 'mixed') {
         // Combine questions from all categories
         for (const category in typedQuestionsData) {
           selectedQuestions = selectedQuestions.concat(
             typedQuestionsData[category as keyof QuizData]
           );
         }
-      } else if (selectedCategory === "जल्दी10") {
+      } else if (selectedCategory === 'जल्दी10') {
         const allQuestions = [];
         for (const categories in typedQuestionsData) {
           allQuestions.push(
